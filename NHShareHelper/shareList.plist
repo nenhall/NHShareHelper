@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>type</key>
+		<string>QQ</string>
+		<key>list</key>
+		<array>
+			<dict>
+				<key>type</key>
+				<string>QQ</string>
+				<key>action</key>
+				<string>OAuth</string>
+				<key>image</key>
+				<string>nh_qq.png</string>
+				<key>title</key>
+				<string>QQ</string>
+				<key>shareType</key>
+				<string></string>
+				<key>shareTitle</key>
+				<string>qq share</string>
+				<key>shareDetail</key>
+				<string>test qq share</string>
+				<key>shareImage</key>
+				<string>QQ_n</string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>QQ</string>
+				<key>action</key>
+				<string>share</string>
+				<key>image</key>
+				<string>nh_qq.png</string>
+				<key>title</key>
+				<string>section</string>
+				<key>shareType</key>
+				<string>section</string>
+				<key>shareTitle</key>
+				<string>qq share</string>
+				<key>shareDetail</key>
+				<string>test qq share</string>
+				<key>shareImage</key>
+				<string>QQ_n</string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>QQ</string>
+				<key>action</key>
+				<string>share</string>
+				<key>image</key>
+				<string>nh_qzone.png</string>
+				<key>title</key>
+				<string>QQ</string>
+				<key>shareType</key>
+				<string>zone</string>
+				<key>shareTitle</key>
+				<string>qq share</string>
+				<key>shareDetail</key>
+				<string>test qq share</string>
+				<key>shareImage</key>
+				<string>QQ_n</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>Wechat</string>
+		<key>list</key>
+		<array>
+			<dict>
+				<key>type</key>
+				<string>Wechat</string>
+				<key>action</key>
+				<string>OAuth</string>
+				<key>image</key>
+				<string>nh_wechat.png</string>
+				<key>title</key>
+				<string>OAuth</string>
+				<key>shareType</key>
+				<string>section</string>
+				<key>shareTitle</key>
+				<string>wechet share</string>
+				<key>shareDetail</key>
+				<string>test wechet share</string>
+				<key>shareImage</key>
+				<string>wechet_n</string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Wechat</string>
+				<key>action</key>
+				<string>share</string>
+				<key>image</key>
+				<string>nh_wechat.png</string>
+				<key>title</key>
+				<string>section</string>
+				<key>shareType</key>
+				<string>section</string>
+				<key>shareTitle</key>
+				<string>wechet share</string>
+				<key>shareDetail</key>
+				<string>test wechet share</string>
+				<key>shareImage</key>
+				<string>wechet_n</string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Wechat</string>
+				<key>action</key>
+				<string>share</string>
+				<key>image</key>
+				<string>nh_wechat_favorite.png</string>
+				<key>title</key>
+				<string>favorite</string>
+				<key>shareType</key>
+				<string>favorite</string>
+				<key>shareTitle</key>
+				<string>wechet share</string>
+				<key>shareDetail</key>
+				<string>test wechet share</string>
+				<key>shareImage</key>
+				<string>wechet_n</string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Wechat</string>
+				<key>action</key>
+				<string>share</string>
+				<key>image</key>
+				<string>nh_wechat_timeline.png</string>
+				<key>title</key>
+				<string>timeline</string>
+				<key>shareType</key>
+				<string>timeline</string>
+				<key>shareTitle</key>
+				<string>wechet share</string>
+				<key>shareDetail</key>
+				<string>test wechet share</string>
+				<key>shareImage</key>
+				<string>wechet_n</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>WeiBo</string>
+		<key>list</key>
+		<array>
+			<dict>
+				<key>type</key>
+				<string>WeiBo</string>
+				<key>action</key>
+				<string>OAuth</string>
+				<key>image</key>
+				<string>nh_sina.png</string>
+				<key>title</key>
+				<string>OAuth</string>
+				<key>shareType</key>
+				<string>section</string>
+				<key>shareTitle</key>
+				<string>weiBo share</string>
+				<key>shareDetail</key>
+				<string>test weiBo share</string>
+				<key>shareImage</key>
+				<string>weiBo_n</string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>WeiBo</string>
+				<key>action</key>
+				<string>share</string>
+				<key>image</key>
+				<string>nh_sina.png</string>
+				<key>title</key>
+				<string>share</string>
+				<key>shareType</key>
+				<string>section</string>
+				<key>shareTitle</key>
+				<string>weiBo share</string>
+				<key>shareDetail</key>
+				<string>test weiBo share</string>
+				<key>shareImage</key>
+				<string>weiBo_n</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>Facebook</string>
+		<key>list</key>
+		<array>
+			<dict>
+				<key>type</key>
+				<string>Facebook</string>
+				<key>action</key>
+				<string>OAuth</string>
+				<key>image</key>
+				<string>nh_facebook.png</string>
+				<key>title</key>
+				<string>OAuth</string>
+				<key>shareType</key>
+				<string>section</string>
+				<key>shareTitle</key>
+				<string>facebook share</string>
+				<key>shareDetail</key>
+				<string>test facebook share</string>
+				<key>shareImage</key>
+				<string>FB_n</string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Facebook</string>
+				<key>action</key>
+				<string>share</string>
+				<key>image</key>
+				<string>nh_facebook.png</string>
+				<key>title</key>
+				<string>share</string>
+				<key>shareType</key>
+				<string>section</string>
+				<key>shareTitle</key>
+				<string>facebook share</string>
+				<key>shareDetail</key>
+				<string>test facebook share</string>
+				<key>shareImage</key>
+				<string>FB_n</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>Alibaba</string>
+		<key>list</key>
+		<array>
+			<dict>
+				<key>type</key>
+				<string>Alibaba</string>
+				<key>action</key>
+				<string>OAuth</string>
+				<key>image</key>
+				<string>nh_alipay.png</string>
+				<key>title</key>
+				<string>OAuth</string>
+				<key>shareType</key>
+				<string>section</string>
+				<key>shareTitle</key>
+				<string>alibaba share</string>
+				<key>shareDetail</key>
+				<string>test alibaba share</string>
+				<key>shareImage</key>
+				<string>alibaba_n</string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Alibaba</string>
+				<key>action</key>
+				<string>share</string>
+				<key>image</key>
+				<string>nh_alipay.png</string>
+				<key>title</key>
+				<string>share</string>
+				<key>shareType</key>
+				<string>section</string>
+				<key>shareTitle</key>
+				<string>alibaba share</string>
+				<key>shareDetail</key>
+				<string>test alibaba share</string>
+				<key>shareImage</key>
+				<string>alibaba_n</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>Twitter</string>
+		<key>list</key>
+		<array>
+			<dict>
+				<key>type</key>
+				<string>twitter</string>
+				<key>action</key>
+				<string>OAuth</string>
+				<key>image</key>
+				<string>nh_twitter.png</string>
+				<key>title</key>
+				<string>OAuth</string>
+				<key>shareType</key>
+				<string>section</string>
+				<key>shareTitle</key>
+				<string>twitter share</string>
+				<key>shareDetail</key>
+				<string>test twitter share</string>
+				<key>shareImage</key>
+				<string>twitter_n</string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Twitter</string>
+				<key>action</key>
+				<string>share</string>
+				<key>image</key>
+				<string>nh_twitter.png</string>
+				<key>title</key>
+				<string>share</string>
+				<key>shareType</key>
+				<string>section</string>
+				<key>shareTitle</key>
+				<string>twitter share</string>
+				<key>shareDetail</key>
+				<string>test twitter share</string>
+				<key>shareImage</key>
+				<string>twitter_n</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>Google</string>
+		<key>list</key>
+		<array>
+			<dict>
+				<key>type</key>
+				<string>Google</string>
+				<key>action</key>
+				<string>OAuth</string>
+				<key>image</key>
+				<string>nh_googleplus.png</string>
+				<key>title</key>
+				<string>OAuth</string>
+				<key>shareTitle</key>
+				<string>google share</string>
+				<key>shareDetail</key>
+				<string>test google share</string>
+				<key>shareImage</key>
+				<string>google_n</string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Google</string>
+				<key>action</key>
+				<string>share</string>
+				<key>image</key>
+				<string>nh_googleplus.png</string>
+				<key>title</key>
+				<string>share</string>
+				<key>shareType</key>
+				<string>section</string>
+				<key>shareTitle</key>
+				<string>google share</string>
+				<key>shareDetail</key>
+				<string>test google share</string>
+				<key>shareImage</key>
+				<string>google_n</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="head" id="U6b-Vx-4bR" customClass="NHReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MXL-Ic-NuC">
+                    <rect key="frame" x="10" y="19" width="42" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="bHC-Mh-CHk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R1E-lY-MaQ">
+                    <rect key="frame" x="0.0" y="48" width="320" height="2"/>
+                    <color key="backgroundColor" red="0.47660902142524719" green="0.37373736500740051" blue="0.28653344511985779" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="dml-Qr-JUi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.79226005077362061" green="0.7181098461151123" blue="0.48854580521583557" alpha="0.7459332191780822" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="R1E-lY-MaQ" secondAttribute="bottom" id="ApC-P4-sgu"/>
+                <constraint firstItem="R1E-lY-MaQ" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="B5f-73-bdf"/>
+                <constraint firstAttribute="trailing" secondItem="R1E-lY-MaQ" secondAttribute="trailing" id="Tkb-Iq-yjh"/>
+                <constraint firstAttribute="bottom" secondItem="MXL-Ic-NuC" secondAttribute="bottom" constant="1" id="dKR-Fc-CEQ"/>
+                <constraint firstItem="MXL-Ic-NuC" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="rUo-Oq-2DP"/>
+            </constraints>
+            <connections>
+                <outlet property="title" destination="MXL-Ic-NuC" id="B38-sM-uXR"/>
+            </connections>
+        </collectionReusableView>
+    </objects>
+</document>
