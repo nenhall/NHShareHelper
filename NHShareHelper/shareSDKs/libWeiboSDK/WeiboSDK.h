@@ -174,8 +174,8 @@ extern NSString * const WeiboSDKGetAidFailNotification;
 + (void)inviteFriend:(NSString* )data withUid:(NSString *)uid withToken:(NSString *)access_token delegate:(id<WBHttpRequestDelegate>)delegate withTag:(NSString*)tag;
 
 /*
- 第三方调用微博短信注册或者登录
- @param navTitle 为登录页navigationBar的title，如果为空的话，默认为“验证码登录”
+ 第三方调用微博短信注册或者登陆
+ @param navTitle 为登陆页navigationBar的title，如果为空的话，默认为“验证码登陆”
 */
 + (void)messageRegister:(NSString *)navTitle;
 @end
