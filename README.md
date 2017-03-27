@@ -4,7 +4,9 @@
  ![Aaron Swartz](https://github.com/NegHao/NHShareHelper/blob/master/pic.png)
  
  <br/>
+ 
 使用方法：将`NHShareHelper`文件夹拖入到你的工程中
+
 <br/>
 
 #### 一、在需要使用分享、登录的头文件中
