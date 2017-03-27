@@ -1,6 +1,8 @@
 ## QQ、微博、微信、Facebook、Google、支付宝、Twitter分享
 <br/>
+
  ![Aaron Swartz](https://github.com/NegHao/NHShareHelper/blob/master/pic.png)
+ 
  <br/>
 使用方法：
 <br/>
