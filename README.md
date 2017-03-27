@@ -3,7 +3,8 @@
 使用方法：<br/>
 #### 一、在需要使用分享、登录的头文件中
 `#import "NHShareCallTool.h"`
-如你只需要QQ、微博分享、登录，那么把`NHShareHelper`文件夹下其实app的` .h .m `文件删除即可。
+<br/>
+如你只需要QQ、微博分享、登录，那么把`NHShareHelper`文件夹下其它app的` .h .m `文件删除即可。
 <br/>
 #### 二、在AppDelegate.m文件中,重写如下方法：
 ```
@@ -283,6 +284,7 @@ info.plist文件右键 > open AS > source code，添加如下配置，注意：�
 		</dict>
 	</dict>
 ```
+<br/>
 ![Aaron Swartz](https://github.com/NegHao/NHShareHelper/blob/master/otherflags.png)
 
 #### 五、第三方sdk下载地址：
