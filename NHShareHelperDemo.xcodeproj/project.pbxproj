@@ -191,8 +191,8 @@
 		0AD010F71E85FE92001D23E3 /* NHShareHelperDemo */ = {
 			isa = PBXGroup;
 			children = (
-				0AD011531E8606A8001D23E3 /* class */,
 				0AD0115C1E8606A8001D23E3 /* source */,
+				0AD011531E8606A8001D23E3 /* class */,
 				0AD010FB1E85FE92001D23E3 /* AppDelegate.h */,
 				0AD010FC1E85FE92001D23E3 /* AppDelegate.m */,
 				0AD011011E85FE92001D23E3 /* Main.storyboard */,
@@ -594,7 +594,7 @@
 					"-Objc",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cnlive.mijialiveshow;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neghao.share;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -623,7 +623,7 @@
 					"-Objc",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cnlive.mijialiveshow;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neghao.share;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -7,12 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NHCall.h"
 
+typedef NS_ENUM (NSInteger, NHAppType) {
+    NHApp_Wechat,
+    NHApp_WeiBo,
+    NHApp_QQ,
+    NHApp_Alibaba,
+    NHApp_Google,
+    NHApp_Facebook,
+    NHApp_Twitter,
+};
 
+@class NHUserinfo;
 @protocol NHShareCallToolProtocol <NSObject>
-- (void)nhcallType:(NHAppType)appType userinfo:(__kindof NHUserinfo *)userinfo errorMsg:(NSString *)errorMsg;
-- (void)nhcallType:(NHAppType)appType loginSuccess:(BOOL)success errorMsg:(NSString *)errorMsg;
-- (void)nhcallType:(NHAppType)appType shareSuccess:(BOOL)success errorMsg:(NSString *)errorMsg;
+- (void)callType:(NHAppType)appType userinfo:(__kindof NHUserinfo *)userinfo errorMsg:(NSString *)errorMsg;
+- (void)callType:(NHAppType)appType loginSuccess:(BOOL)success errorMsg:(NSString *)errorMsg;
+- (void)callType:(NHAppType)appType shareSuccess:(BOOL)success errorMsg:(NSString *)errorMsg;
 
 @end

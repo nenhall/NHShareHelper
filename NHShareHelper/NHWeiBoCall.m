@@ -7,7 +7,7 @@
 //
 
 #import "NHWeiBoCall.h"
-#import "NHShareConfiguration.h"
+
 
 @interface NHWeiBoCall ()<WeiboSDKDelegate,WBHttpRequestDelegate>
 @property (nonatomic, copy  ) NSString *open_id;

@@ -8,7 +8,8 @@
 
 #import "NHShareCallTool.h"
 #import <objc/message.h>
-
+#import "NHShareCallToolProtocol.h"
+#import "NHShareConfiguration.h"
 
 NSString * const NHWechat   = @"wx";
 NSString * const NHWeiBo    = @"wb";
@@ -19,8 +20,7 @@ NSString * const NHGoogle   = @"go";
 NSString * const NHTwitter  = @"tw";
 
 
-@interface NHShareCallTool ()<NHCallDelegate>
-@property (nonatomic, strong)NHCall       *call;
+@interface NHShareCallTool ()<NHShareCallToolProtocol>
 @property (nonatomic, strong)NSDictionary *callHelpers;
 @property (nonatomic, strong)NSMutableDictionary *instanceObject;
 @end
@@ -38,7 +38,6 @@ static NHShareCallTool *_instance;
 - (instancetype)registerAppSetAppConsts:(NSArray *)appConstStrs {
     
     NSAssert(appConstStrs != nil, @"需要注册的app类型不能为空");
-    [_instance call];
 
     for (NSString *appStr in appConstStrs) {
         @autoreleasepool {
@@ -47,8 +46,9 @@ static NHShareCallTool *_instance;
             if (obj != nil) {
                 [self.instanceObject setObject:obj forKey:appStr];
             }
-//            objc_msgSend(obj, @selector(addDelegate:), self);
-            objc_setAssociatedObject(obj, "_callDelegate", self, OBJC_ASSOCIATION_ASSIGN);
+            
+            Ivar var = class_getInstanceVariable([obj class], "_callDelegate");
+            object_setIvar(obj, var, self);
             [obj performSelector:@selector(callRegistApp)];
         }
     }
@@ -63,7 +63,9 @@ static NHShareCallTool *_instance;
 
 - (void)loginSetAppConst:(NSString *)appConstString viewController:(UIViewController *)viewController{
     id app = [_instanceObject objectForKey:appConstString];
-    objc_msgSend(app, @selector(callLoginRequestSetViewController:),viewController);
+    if (app) {
+        objc_msgSend(app, @selector(callLoginRequestSetViewController:),viewController);
+    }
 }
 
 + (BOOL)application:(UIApplication *)application
@@ -85,9 +87,7 @@ static NHShareCallTool *_instance;
     id appOjb = [_instanceObject objectForKey:appKey];
     
     SEL sel = @selector(callApplication:openURL:sourceApplication:annotation:);
-    BOOL isOpen = ((BOOL(*)(id,SEL,id,id,id,id))objc_msgSend)(appOjb, sel, application,url,sourceApplication,annotation);
-    
-    return isOpen;
+    return ((BOOL(*)(id,SEL,id,id,id,id))objc_msgSend)(appOjb, sel, application,url,sourceApplication,annotation);
     
     //    Class supc = class_getSuperclass([appOjb class]);
     //    Ivar ivar = class_getInstanceVariable([appOjb class], "_isOpenURL");
@@ -161,7 +161,7 @@ static NHShareCallTool *_instance;
     return _instance;
 }
 
-- (instancetype)addDelegateObserver:(id)delegate{
+- (instancetype)addDelegate:(id)delegate{
     self.delegate = delegate;
     return self;
 }
@@ -173,12 +173,12 @@ static NHShareCallTool *_instance;
     return _instanceObject;
 }
 
-- (NHCall *)call{
-    if (!_call) {
-        _call = [[NHCall alloc] init];
-        _call.callDelegate = self;
-    }
-    return _call;
-}
+//- (NHCall *)call{
+//    if (!_call) {
+//        _call = [[NHCall alloc] init];
+////        _call.callDelegate = _instance;
+//    }
+//    return _call;
+//}
 
 @end

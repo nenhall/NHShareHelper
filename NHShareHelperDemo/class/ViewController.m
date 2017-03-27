@@ -43,7 +43,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [[NHShareCallTool sharedCallTool] addDelegateObserver:self];
+    [[NHShareCallTool sharedCallTool] addDelegate:self];
     
     _sectionList = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"shareList" ofType:@"plist"]];
     [self.listView registerNib:loadNib(@"NHShareCell") forCellWithReuseIdentifier:@"cell"];
@@ -51,46 +51,12 @@
 }
 
 
-
 - (void)loginAction:(NHItemModel *)model{
-    NHAppType authType;
-    if ([model.type isEqualToString:kQQ]) {
-        [NHShareCallTool loginSetAppConst:NHQQ viewController:nil];
-
-    }else if ([model.type isEqualToString:kWechat]) {
-        [NHShareCallTool loginSetAppConst:NHWechat viewController:self];
-        
-    }else if ([model.type isEqualToString:kWeiBo]) {
-        [NHShareCallTool loginSetAppConst:NHWeiBo viewController:nil];
-        
-    }else if ([model.type isEqualToString:kAlibaba]) {
-        [NHShareCallTool loginSetAppConst:NHAlibaba viewController:nil];
-        
-    }else if ([model.type isEqualToString:kTwitter]) {
-        [NHShareCallTool loginSetAppConst:NHTwitter viewController:nil];
-        
-    }else if ([model.type isEqualToString:kGoogle]) {
-        [NHShareCallTool loginSetAppConst:NHGoogle viewController:nil];
-        
-    }else if ([model.type isEqualToString:kFacebook]) {
-        [NHFacebookCall createLoginManagerReadPermissions:nil
-                                        loginBehavior:FBSDKLoginBehaviorWeb
-                                   fromViewController:self
-                                              handler:^(FBSDKLoginManagerLoginResult *result, FBSDKProfile *currentProfile, NSError *error)
-         {
-             NHShareCell *cell = (NHShareCell *)[_listView cellForItemAtIndexPath:_currentIndexPath];
-             if (currentProfile) {
-                 cell.name.text = currentProfile.name;
-             }
-             NSLog(@"%@-%@-%@",result,currentProfile,error);
-         }];
-        authType = NHApp_Facebook;
-        
-    }
+    [NHShareCallTool loginSetAppConst:model.type viewController:nil];
 }
 
-- (void)shareAction:(NHItemModel *)model{
-    if ([model.type isEqualToString:kQQ]) {
+- (void)shareAction:(NHItemModel *)model {
+    if ([model.type isEqualToString:NHQQ]) {
         NHQQShareType type = NHQQShare_Session;
         if ([model.shareType isEqualToString:@"zone"]) {
             type = NHQQShare_Zone;
@@ -101,7 +67,7 @@
                     previewImgURL:@"http://avatar.csdn.net/F/F/C/1_laencho.jpg"
                         shareType:type];
         
-    }else if ([model.type isEqualToString:kWechat]) {
+    }else if ([model.type isEqualToString:NHWechat]) {
         enum WXScene scene = WXSceneSession;
         if ([model.shareType isEqualToString:@"favorite"]) {
             scene = WXSceneFavorite;
@@ -116,7 +82,7 @@
                        ThumbImage:[UIImage imageNamed:@"test"]
                           InScene:scene];
         
-    }else if ([model.type isEqualToString:kWeiBo]) {
+    }else if ([model.type isEqualToString:NHWeiBo]) {
         NSData *data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle]
                                                        pathForResource:@"test"
                                                        ofType:@"png"]];
@@ -124,13 +90,13 @@
                                   thumbnailData:data
                                      webpageUrl:NHShareUrl];
         
-    }else if ([model.type isEqualToString:kAlibaba]) {
+    }else if ([model.type isEqualToString:NHAlibaba]) {
         
-    }else if ([model.type isEqualToString:kFacebook]) {
+    }else if ([model.type isEqualToString:NHFacebook]) {
         
-    }else if ([model.type isEqualToString:kTwitter]) {
+    }else if ([model.type isEqualToString:NHTwitter]) {
         
-    }else if ([model.type isEqualToString:kGoogle]) {
+    }else if ([model.type isEqualToString:NHGoogle]) {
         
     }
 }

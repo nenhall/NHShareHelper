@@ -11,11 +11,13 @@
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 
+
 @class FBSDKProfile,FBSDKAccessToken,FBSDKLoginManagerLoginResult;
 
 typedef void (^NHFaceLoginManagerRequestTokenHandler)(FBSDKLoginManagerLoginResult *result, FBSDKProfile *currentProfile, NSError *error);
 
 @interface NHFacebookCall : NHCall
+@property (nonatomic, assign) id<NHShareCallToolProtocol> callDelegate;
 
 
 /**

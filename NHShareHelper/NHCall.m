@@ -15,9 +15,6 @@
 
 @implementation NHCall
 @synthesize isOpenURL = _isOpenURL;
-@synthesize callDelegate = _callDelegate;
-
-//NSSingletonM(call)
 
 - (BOOL)callRegistApp {
     return NO;

@@ -23,6 +23,7 @@ typedef NS_ENUM(NSInteger, NHWXAUTH_RESULT){
 
 @interface NHWechatCall : NHCall<WXApiDelegate>
 @property (nonatomic, strong) NHWechatUserinfo *wechatUserinfo;
+@property (nonatomic, assign) id<NHShareCallToolProtocol> callDelegate;
 
 
 + (BOOL)sendText:(NSString *)text

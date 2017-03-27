@@ -7,14 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NHSingleton.h"
-#import "NHShareConfiguration.h"
-#import "NHCall.h"
+#import "NHShareCallToolProtocol.h"
 #import "NHQQCall.h"
 #import "NHWeiBoCall.h"
 #import "NHWechatCall.h"
 #import "NHFacebookCall.h"
-#import "NHShareCallToolProtocol.h"
 
 
 
@@ -85,7 +82,7 @@ NSSingletonH(CallTool);
 /*
  设置代理
  **/
-- (instancetype)addDelegateObserver:(id)delegate;
+- (instancetype)addDelegate:(id)delegate;
 
 /**
  *  登录请求

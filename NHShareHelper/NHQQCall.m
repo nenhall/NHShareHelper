@@ -107,7 +107,7 @@
         error = @"没有获取accesstoken";
     }
     if (self.callDelegate && [self.callDelegate respondsToSelector:@selector(callType:loginSuccess:errorMsg:)]) {
-        [self.callDelegate callType:NHApp_QQ loginSuccess:result errorMsg:@"调用获取用户信息API失败！"];
+        [self.callDelegate callType:NHApp_QQ loginSuccess:result errorMsg:error];
     }
 }
 
@@ -138,6 +138,8 @@
 -(void)tencentDidLogout{
 
 }
+
+
 
 #pragma mark - 获取用户信息的回调
 #pragma mark -

@@ -3,13 +3,14 @@
 使用方法：<br/>
 #### 一、在需要使用分享、登录的头文件中
 `#import "NHShareCallTool.h"`
+如你只需要QQ、微博分享、登录，那么把`NHShareHelper`文件夹下其实app的` .h .m `文件删除即可。
 <br/>
 #### 二、在AppDelegate.m文件中,重写如下方法：
 ```
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    //一键注册所有的app
-    [NHShareCallTool registerApps];
+    //注册app
+    [NHShareCallTool registerAppSetAppConsts:@[NHQQ,NHWeiBo,NHWechat,NHFacebook]];
     
     //需要使用到facebook才需要调用
     [NHFacebook application:application
@@ -58,13 +59,16 @@
 @implementation ViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[NHShareCallTool sharedNHShareCallTool] addDelegateObserver:self];
+    [[NHShareCallTool sharedCallTool] addDelegate:self];
 }
 ```
 
 ##### 使用方法:
 
 ```
+//登录 eg：qq登录
+[NHShareCallTool loginSetAppConst:NHQQ viewController:nil];
+
 //QQ分享
 [NHQQCall sendCompereName:shareTitle
                    urlStr:shareUrl
@@ -279,7 +283,7 @@ info.plist文件右键 > open AS > source code，添加如下配置，注意：�
 		</dict>
 	</dict>
 ```
-
+![Aaron Swartz](https://github.com/NegHao/NHShareHelper/blob/master/otherflags.png)
 
 #### 五、第三方sdk下载地址：
 因sdk包比较大，所以请自动去官网下载相应的sdk包，也更好保证是官网最新版sdk，本来想用cocoapod管理的，但有些公司的pod库更新得很慢，无法保证sdk的版本，所以还是手动下载吧！下载完成后拖入到`shareSDKS`文件夹下相应的文件夹内：

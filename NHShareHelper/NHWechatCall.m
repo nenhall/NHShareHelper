@@ -8,10 +8,7 @@
 //Build Setting，在"Other Linker Flags"中加入"-Objc -all_load"
 
 #import "NHWechatCall.h"
-#import "NHSingleton.h"
-#import "NHShareCallTool.h"
 #import "NHApiRequestHelper.h"
-#import "NHShareConfiguration.h"
 
 
 @class NHShareCallTool;

@@ -9,7 +9,7 @@
 		<array>
 			<dict>
 				<key>type</key>
-				<string>QQ</string>
+				<string>te</string>
 				<key>action</key>
 				<string>OAuth</string>
 				<key>image</key>
@@ -27,7 +27,7 @@
 			</dict>
 			<dict>
 				<key>type</key>
-				<string>QQ</string>
+				<string>te</string>
 				<key>action</key>
 				<string>share</string>
 				<key>image</key>
@@ -45,7 +45,7 @@
 			</dict>
 			<dict>
 				<key>type</key>
-				<string>QQ</string>
+				<string>te</string>
 				<key>action</key>
 				<string>share</string>
 				<key>image</key>
@@ -70,7 +70,7 @@
 		<array>
 			<dict>
 				<key>type</key>
-				<string>Wechat</string>
+				<string>wx</string>
 				<key>action</key>
 				<string>OAuth</string>
 				<key>image</key>
@@ -88,7 +88,7 @@
 			</dict>
 			<dict>
 				<key>type</key>
-				<string>Wechat</string>
+				<string>wx</string>
 				<key>action</key>
 				<string>share</string>
 				<key>image</key>
@@ -106,7 +106,7 @@
 			</dict>
 			<dict>
 				<key>type</key>
-				<string>Wechat</string>
+				<string>wx</string>
 				<key>action</key>
 				<string>share</string>
 				<key>image</key>
@@ -124,7 +124,7 @@
 			</dict>
 			<dict>
 				<key>type</key>
-				<string>Wechat</string>
+				<string>wx</string>
 				<key>action</key>
 				<string>share</string>
 				<key>image</key>
@@ -149,7 +149,7 @@
 		<array>
 			<dict>
 				<key>type</key>
-				<string>WeiBo</string>
+				<string>wb</string>
 				<key>action</key>
 				<string>OAuth</string>
 				<key>image</key>
@@ -167,7 +167,7 @@
 			</dict>
 			<dict>
 				<key>type</key>
-				<string>WeiBo</string>
+				<string>wb</string>
 				<key>action</key>
 				<string>share</string>
 				<key>image</key>
@@ -192,7 +192,7 @@
 		<array>
 			<dict>
 				<key>type</key>
-				<string>Facebook</string>
+				<string>fb</string>
 				<key>action</key>
 				<string>OAuth</string>
 				<key>image</key>
@@ -210,7 +210,7 @@
 			</dict>
 			<dict>
 				<key>type</key>
-				<string>Facebook</string>
+				<string>fb</string>
 				<key>action</key>
 				<string>share</string>
 				<key>image</key>
@@ -235,7 +235,7 @@
 		<array>
 			<dict>
 				<key>type</key>
-				<string>Alibaba</string>
+				<string>al</string>
 				<key>action</key>
 				<string>OAuth</string>
 				<key>image</key>
@@ -253,7 +253,7 @@
 			</dict>
 			<dict>
 				<key>type</key>
-				<string>Alibaba</string>
+				<string>al</string>
 				<key>action</key>
 				<string>share</string>
 				<key>image</key>
@@ -278,7 +278,7 @@
 		<array>
 			<dict>
 				<key>type</key>
-				<string>twitter</string>
+				<string>tw</string>
 				<key>action</key>
 				<string>OAuth</string>
 				<key>image</key>
@@ -296,7 +296,7 @@
 			</dict>
 			<dict>
 				<key>type</key>
-				<string>Twitter</string>
+				<string>tw</string>
 				<key>action</key>
 				<string>share</string>
 				<key>image</key>
@@ -321,7 +321,7 @@
 		<array>
 			<dict>
 				<key>type</key>
-				<string>Google</string>
+				<string>go</string>
 				<key>action</key>
 				<string>OAuth</string>
 				<key>image</key>
@@ -337,7 +337,7 @@
 			</dict>
 			<dict>
 				<key>type</key>
-				<string>Google</string>
+				<string>go</string>
 				<key>action</key>
 				<string>share</string>
 				<key>image</key>

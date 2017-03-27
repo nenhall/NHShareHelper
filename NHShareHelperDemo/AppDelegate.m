@@ -20,8 +20,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    //一键注册所有的app
-//    [NHShareCallTool registerApps];
+    //注册app
     [NHShareCallTool registerAppSetAppConsts:@[NHQQ,NHWeiBo,NHWechat,NHFacebook]];
     
     

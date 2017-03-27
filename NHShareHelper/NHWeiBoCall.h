@@ -12,6 +12,8 @@
 
 
 @interface NHWeiBoCall : NHCall
+@property (nonatomic, assign) id<NHShareCallToolProtocol> callDelegate;
+
 //NSSingletonH(WeiBoCall);
 
 /**

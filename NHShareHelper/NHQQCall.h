@@ -24,6 +24,9 @@ typedef NS_ENUM(NSInteger, NHQQShareType) {
 
 @interface NHQQCall : NHCall<TencentSessionDelegate,QQApiInterfaceDelegate>
 @property (nonatomic, strong) NHQQUserinfo *QQUserinfo;
+@property (nonatomic, assign) id<NHShareCallToolProtocol> callDelegate;
+
+
 //NSSingletonH(QQCall)
 
 - (BOOL)qqApplication:(UIApplication *)application
