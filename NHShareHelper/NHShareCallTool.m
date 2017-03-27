@@ -8,7 +8,7 @@
 
 #import "NHShareCallTool.h"
 #import <objc/message.h>
-#import "NHShareCallToolProtocol.h"
+#import "NHCallProtocol.h"
 #import "NHShareConfiguration.h"
 
 NSString * const NHWechat   = @"wx";
@@ -20,7 +20,7 @@ NSString * const NHGoogle   = @"go";
 NSString * const NHTwitter  = @"tw";
 
 
-@interface NHShareCallTool ()<NHShareCallToolProtocol>
+@interface NHShareCallTool ()<NHCallProtocol>
 @property (nonatomic, strong)NSDictionary *callHelpers;
 @property (nonatomic, strong)NSMutableDictionary *instanceObject;
 @end

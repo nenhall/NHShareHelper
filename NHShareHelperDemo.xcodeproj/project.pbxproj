@@ -57,7 +57,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0A0B9B3A1E87D98100C99FD7 /* NHShareCallToolProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHShareCallToolProtocol.h; sourceTree = "<group>"; };
+		0A0B9B3A1E87D98100C99FD7 /* NHCallProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHCallProtocol.h; sourceTree = "<group>"; };
 		0AD010F51E85FE92001D23E3 /* NHShareHelperDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NHShareHelperDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD010F91E85FE92001D23E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0AD010FB1E85FE92001D23E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -230,7 +230,7 @@
 				0AD0111A1E85FEB5001D23E3 /* NHUserinfo.h */,
 				0AD0111B1E85FEB5001D23E3 /* NHUserinfo.m */,
 				0AD011191E85FEB5001D23E3 /* NHSingleton.h */,
-				0A0B9B3A1E87D98100C99FD7 /* NHShareCallToolProtocol.h */,
+				0A0B9B3A1E87D98100C99FD7 /* NHCallProtocol.h */,
 				0AD011181E85FEB5001D23E3 /* NHShareConfiguration.h */,
 				0AD011101E85FEB5001D23E3 /* NHApiRequestHelper.h */,
 				0AD011111E85FEB5001D23E3 /* NHApiRequestHelper.m */,

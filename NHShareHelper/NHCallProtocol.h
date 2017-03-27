@@ -1,5 +1,5 @@
 //
-//  NHShareCallToolProtocol.h
+//  NHCallProtocol.h
 //  NHShareHelperDemo
 //
 //  Created by neghao on 3/26/17.
@@ -19,7 +19,7 @@ typedef NS_ENUM (NSInteger, NHAppType) {
 };
 
 @class NHUserinfo;
-@protocol NHShareCallToolProtocol <NSObject>
+@protocol NHCallProtocol <NSObject>
 - (void)callType:(NHAppType)appType userinfo:(__kindof NHUserinfo *)userinfo errorMsg:(NSString *)errorMsg;
 - (void)callType:(NHAppType)appType loginSuccess:(BOOL)success errorMsg:(NSString *)errorMsg;
 - (void)callType:(NHAppType)appType shareSuccess:(BOOL)success errorMsg:(NSString *)errorMsg;

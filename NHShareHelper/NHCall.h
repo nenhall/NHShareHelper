@@ -11,7 +11,7 @@
 #import "NHUserinfo.h"
 #import "NHSingleton.h"
 #import "NHShareConfiguration.h"
-#import "NHShareCallToolProtocol.h"
+#import "NHCallProtocol.h"
 
 
 @interface NHCall : NSObject

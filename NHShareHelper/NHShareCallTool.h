@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NHShareCallToolProtocol.h"
 #import "NHQQCall.h"
 #import "NHWeiBoCall.h"
 #import "NHWechatCall.h"
@@ -25,7 +24,7 @@ UIKIT_EXTERN NSString * const NHTwitter;
 
 
 
-@protocol NHShareCallToolDelegate <NSObject,NHShareCallToolProtocol>
+@protocol NHShareCallToolDelegate <NSObject,NHCallProtocol>
 /**
  *  获取QQ用户信息结果
  */
