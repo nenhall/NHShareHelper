@@ -1,10 +1,10 @@
 ## QQ、微博、微信、Facebook、Google、支付宝、Twitter分享
-
 <br/>
  ![Aaron Swartz](https://github.com/NegHao/NHShareHelper/blob/master/pic.png)
  <br/>
 使用方法：
 <br/>
+
 #### 一、在需要使用分享、登录的头文件中
 `#import "NHShareCallTool.h"`
 <br/>
