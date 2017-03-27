@@ -37,15 +37,15 @@ typedef NS_ENUM(NSInteger, NHQQShareType) {
 /**
  *  QQ分享、空间分享
  *
- *  @param compereName   分享标题
+ *  @param compereTitle   分享标题
  *  @param urlStr        分享URL
  *  @param previewImgURL 预览封面Url
  *  @param shareType     分享类型
  */
-+ (void)sendCompereName:(NSString *)compereName
-                 urlStr:(NSString *)urlStr
-            description:(NSString *)description
-          previewImgURL:(NSString *)previewImgURL
-              shareType:(NHQQShareType)shareType;
++ (void)sendCompereTitle:(NSString *)compereTitle
+                  urlStr:(NSString *)urlStr
+             description:(NSString *)description
+           previewImgURL:(NSString *)previewImgURL
+               shareType:(NHQQShareType)shareType;
 
 @end

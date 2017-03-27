@@ -152,7 +152,8 @@
         //保存用户信息
         _QQUserinfo = [[NHQQUserinfo alloc] init];
         [_QQUserinfo setValuesForKeysWithDictionary:response.jsonResponse];
-        
+        _QQUserinfo.oid = _openId;
+
     }else{
         [self showErrorinfoWith:response];
     }
@@ -163,20 +164,20 @@
     }
 }
 
-+ (void)sendCompereName:(NSString *)compereName
++ (void)sendCompereTitle:(NSString *)compereTitle
                  urlStr:(NSString *)urlStr
             description:(NSString *)description
           previewImgURL:(NSString *)previewImgURL
               shareType:(NHQQShareType)shareType
 {
-    [[[self alloc] init] sendCompereName:compereName
+    [[[self alloc] init] sendCompereTitle:compereTitle
                                   urlStr:urlStr
                              description:description
                            previewImgURL:previewImgURL
                                shareType:shareType];
 }
 
-- (void)sendCompereName:(NSString *)compereName
+- (void)sendCompereTitle:(NSString *)compereTitle
                  urlStr:(NSString *)urlStr
             description:(NSString *)description
           previewImgURL:(NSString *)previewImgURL
@@ -184,7 +185,7 @@
 {
     //    NHNSLog(@"判断登录态是否有效:%d",[_tencentOAuth isSessionValid]);
     [self createNewsObjectWithUrlStr:urlStr
-                         compereName:compereName
+                        compereTitle:compereTitle
                          description:description
                        previewImgURL:previewImgURL
                             setCflag:shareType];
@@ -194,10 +195,14 @@
 /**
  *  创建QQ信息对象
  */
-- (QQApiNewsObject *)createNewsObjectWithUrlStr:(NSString *)urlStr compereName:(NSString *)compereName description:(NSString *)description previewImgURL:(NSString *)previewImgURL setCflag:(uint64_t)flag{
+- (QQApiNewsObject *)createNewsObjectWithUrlStr:(NSString *)urlStr
+                                   compereTitle:(NSString *)compereTitle
+                                    description:(NSString *)description
+                                  previewImgURL:(NSString *)previewImgURL
+                                       setCflag:(uint64_t)flag {
     
-    NSString *descriptions = NHShareDescription(compereName);
-    NSString *title = NHShareUrl;
+    NSString *descriptions = NHShareDescription(compereTitle);
+    NSString *title = compereTitle;
     NSURL *url = [NSURL URLWithString:urlStr];
     NSURL *previewURL = [NSURL URLWithString:previewImgURL];
     

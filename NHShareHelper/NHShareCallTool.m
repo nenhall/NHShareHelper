@@ -23,6 +23,8 @@ NSString * const NHTwitter  = @"tw";
 @interface NHShareCallTool ()<NHCallProtocol>
 @property (nonatomic, strong)NSDictionary *callHelpers;
 @property (nonatomic, strong)NSMutableDictionary *instanceObject;
+@property (nonatomic, weak  )UIViewController *presentViewController;
+
 @end
 
 @implementation NHShareCallTool
@@ -49,7 +51,7 @@ static NHShareCallTool *_instance;
             
             Ivar var = class_getInstanceVariable([obj class], "_callDelegate");
             object_setIvar(obj, var, self);
-            [obj performSelector:@selector(callRegistApp)];
+            objc_msgSend(obj, @selector(callRegistApp));
         }
     }
 
@@ -57,15 +59,14 @@ static NHShareCallTool *_instance;
 }
 
 //MARK: 登陆
-+ (void)loginSetAppConst:(NSString *)appConstString viewController:(UIViewController *)viewController{
++ (void)loginSetAppConst:(NSString *)appConstString viewController:(UIViewController *)viewController {
     [_instance loginSetAppConst:appConstString viewController:viewController];
 }
 
-- (void)loginSetAppConst:(NSString *)appConstString viewController:(UIViewController *)viewController{
+- (void)loginSetAppConst:(NSString *)appConstString viewController:(UIViewController *)viewController {
+    _presentViewController = viewController;
     id app = [_instanceObject objectForKey:appConstString];
-    if (app) {
-        objc_msgSend(app, @selector(callLoginRequestSetViewController:),viewController);
-    }
+    objc_msgSend(app, @selector(callLoginRequestSetViewController:), _presentViewController);
 }
 
 + (BOOL)application:(UIApplication *)application

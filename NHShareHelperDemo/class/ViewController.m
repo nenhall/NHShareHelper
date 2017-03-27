@@ -61,11 +61,11 @@
         if ([model.shareType isEqualToString:@"zone"]) {
             type = NHQQShare_Zone;
         }
-        [NHQQCall sendCompereName:NHShareTitle
-                           urlStr:NHShareUrl
-                      description:NHShareDescription(@"")
-                    previewImgURL:@"http://avatar.csdn.net/F/F/C/1_laencho.jpg"
-                        shareType:type];
+        [NHQQCall sendCompereTitle:NHShareTitle
+                            urlStr:NHShareUrl
+                       description:NHShareDescription(@"")
+                     previewImgURL:@"http://avatar.csdn.net/F/F/C/1_laencho.jpg"
+                         shareType:type];
         
     }else if ([model.type isEqualToString:NHWechat]) {
         enum WXScene scene = WXSceneSession;

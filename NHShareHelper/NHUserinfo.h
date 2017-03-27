@@ -30,6 +30,7 @@
 @property (nonatomic , copy) NSString              * msg;
 @property (nonatomic , copy) NSString              * gender;
 @property (nonatomic , copy) NSString              * nickname;
+@property (nonatomic , copy) NSString              * oid;
 @end
 /**
  QQ用户信息{
@@ -63,7 +64,7 @@
 @property (nonatomic , copy) NSString              * language;
 @property (nonatomic , copy) NSString              * headimgurl;
 @property (nonatomic , copy) NSString              * unionid;
-@property (nonatomic , copy) NSString              * sex;
+@property (nonatomic , assign) NSInteger             sex;
 @property (nonatomic , copy) NSString              * province;
 @end
 /**
@@ -88,8 +89,8 @@
 @property (nonatomic , copy) NSString              * mbtype;
 @property (nonatomic , copy) NSString              * allow_all_comment;
 @property (nonatomic , copy) NSString              * allow_all_act_msg;
-@property (nonatomic , copy) NSString              * class;
-@property (nonatomic , copy) NSString              * id;
+@property (nonatomic , copy) NSString              * wb_class;
+@property (nonatomic , copy) NSString              * wb_id;
 @property (nonatomic , copy) NSString              * avatar_large;
 @property (nonatomic , copy) NSString              * profile_image_url;
 @property (nonatomic , copy) NSString              * created_at;
@@ -118,7 +119,7 @@
 @property (nonatomic , copy) NSString              * city;
 @property (nonatomic , copy) NSString              * block_app;
 @property (nonatomic , copy) NSString              * online_status;
-@property (nonatomic , strong) Insecurity              * insecurity;
+@property (nonatomic , strong) Insecurity          * insecurity;
 @property (nonatomic , strong) Status              * status;
 @property (nonatomic , copy) NSString              * urank;
 @property (nonatomic , copy) NSString              * verified_reason_url;
@@ -137,7 +138,7 @@
 @property (nonatomic , copy) NSString              * verified;
 @end
 
-@interface Insecurity :NSObject <NSCoding,NSCopying>
+@interface Insecurity :NSObject
 @property (nonatomic , copy) NSString              * sexual_content;
 @end
 
@@ -155,7 +156,7 @@
 @property (nonatomic , copy) NSString              * shooting;
 @end
 
-@interface Visible :NSObject <NSCoding,NSCopying>
+@interface Visible :NSObject
 @property (nonatomic , copy) NSString              * list_id;
 @property (nonatomic , copy) NSString              * type;
 @end
@@ -163,20 +164,20 @@
 @interface Darwin_tags :NSObject
 @end
 
-@interface Status :NSObject <NSCoding,NSCopying>
+@interface Status :NSObject
 @property (nonatomic , copy) NSString              * favorited;
 @property (nonatomic , copy) NSString              * truncated;
-@property (nonatomic , copy) NSString              * id;
+@property (nonatomic , copy) NSString              * status_id;
 @property (nonatomic , copy) NSString              * created_at;
 @property (nonatomic , copy) NSString              * in_reply_to_screen_name;
 @property (nonatomic , copy) NSString              * isLongText;
 @property (nonatomic , copy) NSString              * is_show_bulletin;
-@property (nonatomic , strong) NSArray<Pic_urls *>              * pic_urls;
+@property (nonatomic , strong) NSArray<Pic_urls *> * pic_urls;
 @property (nonatomic , copy) NSString              * text;
 @property (nonatomic , copy) NSString              * idstr;
 @property (nonatomic , copy) NSString              * gif_ids;
 @property (nonatomic , copy) NSString              * hasActionTypeCard;
-@property (nonatomic , strong) NSArray<Hot_weibo_tags *>              * hot_weibo_tags;
+@property (nonatomic , strong) NSArray<Hot_weibo_tags *>  * hot_weibo_tags;
 @property (nonatomic , copy) NSString              * source_type;
 @property (nonatomic , copy) NSString              * page_type;
 @property (nonatomic , copy) NSString              * textLength;
