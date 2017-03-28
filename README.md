@@ -79,24 +79,25 @@
 [NHShareCallTool loginSetAppConst:NHQQ viewController:nil];
 
 //QQ分享
-[NHQQCall sendCompereName:shareTitle
-                   urlStr:shareUrl
-            previewImgURL:@"http://avatar.csdn.net/F/F/C/1_laencho.jpg"
-                shareType:QQShare_Zone];
+        [NHQQCall sendTitle:NHShareTitle
+                     urlStr:NHShareUrl
+                description:NHShareDescription(@"")
+              previewImgURL:@"http://avatar.csdn.net/F/F/C/1_laencho.jpg"
+                  shareType:type];
 		    
 //微信分享 
-[NHWechatCall sendLinkURL:shareUrl
-                 TagName:shareTitle
-                   Title:shareTitle
-             Description:shareTitle
-              ThumbImage:[UIImage imageNamed:@"test"]
-                 InScene:WXSceneSession];
+        [NHWechatCall sendLinkURL:NHShareUrl
+                          TagName:NHShareTitle
+                            Title:NHShareTitle
+                      Description:NHShareDescription(@"")
+                       ThumbImage:[UIImage imageNamed:@"test"]
+                          InScene:scene];
    
 //微博分享
-NSData *data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"test" ofType:@"png"]];
-[NHWeiBoCall sendRequestWithCompereName:shareTitle
-                          thumbnailData:data
-                             webpageUrl:shareUrl];
+        NSData *data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"test" ofType:@"png"]];
+        [NHWeiBoCall sendTitle:NHShareTitle
+                 thumbnailData:data
+                    webpageUrl:NHShareUrl];
 ```
 
 <br/>
