@@ -61,11 +61,11 @@
         if ([model.shareType isEqualToString:@"zone"]) {
             type = NHQQShare_Zone;
         }
-        [NHQQCall sendCompereTitle:NHShareTitle
-                            urlStr:NHShareUrl
-                       description:NHShareDescription(@"")
-                     previewImgURL:@"http://avatar.csdn.net/F/F/C/1_laencho.jpg"
-                         shareType:type];
+        [NHQQCall sendTitle:NHShareTitle
+                     urlStr:NHShareUrl
+                description:NHShareDescription(@"")
+              previewImgURL:@"http://avatar.csdn.net/F/F/C/1_laencho.jpg"
+                  shareType:type];
         
     }else if ([model.type isEqualToString:NHWechat]) {
         enum WXScene scene = WXSceneSession;
@@ -86,9 +86,9 @@
         NSData *data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle]
                                                        pathForResource:@"test"
                                                        ofType:@"png"]];
-        [NHWeiBoCall sendRequestWithCompereName:NHShareTitle
-                                  thumbnailData:data
-                                     webpageUrl:NHShareUrl];
+        [NHWeiBoCall sendTitle:NHShareTitle
+                 thumbnailData:data
+                    webpageUrl:NHShareUrl];
         
     }else if ([model.type isEqualToString:NHAlibaba]) {
         

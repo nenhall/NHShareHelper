@@ -164,28 +164,28 @@
     }
 }
 
-+ (void)sendCompereTitle:(NSString *)compereTitle
-                 urlStr:(NSString *)urlStr
-            description:(NSString *)description
-          previewImgURL:(NSString *)previewImgURL
-              shareType:(NHQQShareType)shareType
++ (void)sendTitle:(NSString *)title
+           urlStr:(NSString *)urlStr
+      description:(NSString *)description
+    previewImgURL:(NSString *)previewImgURL
+        shareType:(NHQQShareType)shareType
 {
-    [[[self alloc] init] sendCompereTitle:compereTitle
-                                  urlStr:urlStr
-                             description:description
-                           previewImgURL:previewImgURL
-                               shareType:shareType];
+    [[[self alloc] init] sendTitle:title
+                            urlStr:urlStr
+                       description:description
+                     previewImgURL:previewImgURL
+                         shareType:shareType];
 }
 
-- (void)sendCompereTitle:(NSString *)compereTitle
-                 urlStr:(NSString *)urlStr
-            description:(NSString *)description
-          previewImgURL:(NSString *)previewImgURL
-              shareType:(NHQQShareType)shareType
+- (void)sendTitle:(NSString *)title
+           urlStr:(NSString *)urlStr
+      description:(NSString *)description
+    previewImgURL:(NSString *)previewImgURL
+        shareType:(NHQQShareType)shareType
 {
     //    NHNSLog(@"判断登录态是否有效:%d",[_tencentOAuth isSessionValid]);
     [self createNewsObjectWithUrlStr:urlStr
-                        compereTitle:compereTitle
+                               title:title
                          description:description
                        previewImgURL:previewImgURL
                             setCflag:shareType];
@@ -196,17 +196,15 @@
  *  创建QQ信息对象
  */
 - (QQApiNewsObject *)createNewsObjectWithUrlStr:(NSString *)urlStr
-                                   compereTitle:(NSString *)compereTitle
+                                          title:(NSString *)title
                                     description:(NSString *)description
                                   previewImgURL:(NSString *)previewImgURL
                                        setCflag:(uint64_t)flag {
     
-    NSString *descriptions = NHShareDescription(compereTitle);
-    NSString *title = compereTitle;
     NSURL *url = [NSURL URLWithString:urlStr];
     NSURL *previewURL = [NSURL URLWithString:previewImgURL];
     
-    QQApiNewsObject* newsObj = [QQApiNewsObject objectWithURL:url title:title description:description ? : descriptions previewImageURL:previewURL];
+    QQApiNewsObject* newsObj = [QQApiNewsObject objectWithURL:url title:title description:description previewImageURL:previewURL];
     [newsObj setCflag:flag];
     
     SendMessageToQQReq* req = [SendMessageToQQReq reqWithContent:newsObj];

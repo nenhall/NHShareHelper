@@ -58,25 +58,24 @@
 /**
  *  微博分享
  */
-+ (void)sendRequestWithCompereName:(NSString *)compereName
-                     thumbnailData:(NSData *)thumbnailData
-                        webpageUrl:(NSString *)webpageUrl
++ (void)sendTitle:(NSString *)title
+    thumbnailData:(NSData *)thumbnailData
+       webpageUrl:(NSString *)webpageUrl
 {
-//    [[NHWeiBoCall sharedNHWeiBoCall] sendRequestWithCompereName:compereName
-//                                                  thumbnailData:thumbnailData
-//                                                     webpageUrl:webpageUrl];
-    [[[self alloc] init] sendRequestWithCompereName:compereName
-                                      thumbnailData:thumbnailData
-                                         webpageUrl:webpageUrl];
+    //    [[NHWeiBoCall sharedNHWeiBoCall] sendRequestWithCompereName:compereName
+    //                                                  thumbnailData:thumbnailData
+    //                                                     webpageUrl:webpageUrl];
+    [[[self alloc] init] sendTitle:title
+                     thumbnailData:thumbnailData
+                        webpageUrl:webpageUrl];
 }
 
-- (void)sendRequestWithCompereName:(NSString *)compereName
-                     thumbnailData:(NSData *)thumbnailData
-                        webpageUrl:(NSString *)webpageUrl
+- (void)sendTitle:(NSString *)title
+    thumbnailData:(NSData *)thumbnailData
+       webpageUrl:(NSString *)webpageUrl
 {
     WBMessageObject *message = [WBMessageObject message];
-    NSString *string = [NSString stringWithFormat:@"%@\n%@",NHShareTitle,NHShareDescription(compereName)];
-    message.text = [NSString stringWithFormat:@"%@：%@",string,webpageUrl];
+    message.text = [NSString stringWithFormat:@"%@：%@",title,webpageUrl];
     
     WBImageObject *image = [WBImageObject object];
     image.imageData = thumbnailData;
