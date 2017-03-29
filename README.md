@@ -310,7 +310,7 @@ info.plist文件右键 > open AS > source code，添加如下配置，注意：�
 qq: http://wiki.open.qq.com/wiki/mobile/SDK下载<br/>
 wechat: https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=open1419319164&token=&lang=zh_CN<br/>
 weiBo: http://open.weibo.com/wiki/SDK<br/>
-Alibaba：https://doc.open.alipay.com/docs/doc.htm?spm=a219a.7629140.0.0.a6mex3&treeId=218&articleId=105326&docType=1
+Alibaba：https://doc.open.alipay.com/docs/doc.htm?spm=a219a.7629140.0.0.a6mex3&treeId=218&articleId=105326&docType=1<br/>
 facebook: https://developers.facebook.com/docs/ios<br/>
 
 ![Aaron Swartz](https://github.com/NegHao/NHShareHelper/blob/master/help/SDK.png)
