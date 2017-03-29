@@ -11,7 +11,7 @@
 #import "NHWeiBoCall.h"
 #import "NHWechatCall.h"
 #import "NHFacebookCall.h"
-
+#import "NHAlibabaCall.h"
 
 
 UIKIT_EXTERN NSString * const NHWechat;

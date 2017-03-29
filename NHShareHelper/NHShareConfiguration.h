@@ -10,13 +10,15 @@
 #import "NHSingleton.h"
 
 //note
-#define NHShareUrl      @"https://github.com/NegHao/NHShareHelper.git"
-#define NHShareTitle   [NSString stringWithFormat:@"NHShareHelper，不同寻常的分享体验！"]
+#define NHShareUrl       @"https://github.com/NegHao/NHShareHelper.git"
+#define NHShareTitle     [NSString stringWithFormat:@"NHShareHelper，不同寻常的分享体验！"]
 #define NHShareDescription(name) [NSString stringWithFormat:@"%@ 邀您一起感受Ta的分享之旅，快去看看吧~",(name)]
+#define NHShareImageUrl    @"http://avatar.csdn.net/F/F/C/1_laencho.jpg"
+#define NHShareImageData   UIImagePNGRepresentation([UIImage imageNamed:@"test"])
 
 
 #define FacebookID     @"2437370894235"
-
+#define AlibabaID      @"20170323063520"
 //QQ参数
 #define QQAppID        @"11054672"
 #define QQAppKey       @"xiJ7fsMcHTAbA1el"

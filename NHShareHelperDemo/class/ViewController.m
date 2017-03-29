@@ -16,7 +16,7 @@
 #import "NHQQCall.h"
 #import "NHWechatCall.h"
 #import "NHWeiBoCall.h"
-
+#import "FTPopOverMenu.h"
 
 #define loadNib(nibName)  [UINib nibWithNibName:nibName bundle:nil]
 #define loadImage(name)   [NSString stringWithFormat:@"NHShareResources.bundle/PlatformTheme/%@",(name)]
@@ -55,7 +55,7 @@
     [NHShareCallTool loginSetAppConst:model.type viewController:nil];
 }
 
-- (void)shareAction:(NHItemModel *)model {
+- (void)shareAction:(NHItemModel *)model view:(UIImageView *)view{
     if ([model.type isEqualToString:NHQQ]) {
         NHQQShareType type = NHQQShare_Session;
         if ([model.shareType isEqualToString:@"zone"]) {
@@ -64,7 +64,7 @@
         [NHQQCall sendTitle:NHShareTitle
                      urlStr:NHShareUrl
                 description:NHShareDescription(@"")
-              previewImgURL:@"http://avatar.csdn.net/F/F/C/1_laencho.jpg"
+              previewImgURL:NHShareImageUrl
                   shareType:type];
         
     }else if ([model.type isEqualToString:NHWechat]) {
@@ -91,6 +91,47 @@
                     webpageUrl:NHShareUrl];
         
     }else if ([model.type isEqualToString:NHAlibaba]) {
+
+        [FTPopOverMenu showForSender:view
+                       withMenuArray:@[@"发送文本消息",
+                                       @"发送图片消息(图片链接形式)",
+                                       @"发送图片消息(图片数据形式)",
+                                       @"发送网页消息(缩略图链接形式)",
+                                       @"发送网页消息(缩略图数据形式)"]
+                           doneBlock:^(NSInteger selectedIndex)
+         {
+             switch (selectedIndex) {
+                 case 0:
+                     [NHAlibabaCall sendMessageText:NHShareTitle scene:0];
+                     break;
+                     
+                 case 1:
+                     [NHAlibabaCall sendPhotoByUrlString:NHShareImageUrl scene:0];
+                     break;
+                     
+                 case 2:
+                     [NHAlibabaCall sendPhotoByData:NHShareImageData scene:0];
+                     break;
+                     
+                 case 3:
+                     [NHAlibabaCall sendWebByUrlString:NHShareUrl
+                                                 title:NHShareTitle
+                                           description:NHShareTitle
+                                              thumbUrl:NHShareImageUrl
+                                                 scene:1];
+                     break;
+                     
+                 case 4:
+                     [NHAlibabaCall sendWebByData:NHShareImageData
+                                        urlString:NHShareUrl
+                                            title:NHShareTitle
+                                      description:NHShareTitle
+                                            scene:0];
+                     break;
+             }
+         } dismissBlock:^{
+             
+         }];
         
     }else if ([model.type isEqualToString:NHFacebook]) {
         
@@ -150,13 +191,14 @@
     NHItemModel *model = [items objectAtIndex:indexPath.item];
     
     _currentIndexPath = indexPath;
+    NHShareCell *cell = (NHShareCell *)[collectionView cellForItemAtIndexPath:indexPath];
     //登录
     if ([model.action isEqualToString:@"OAuth"]) {
         [self loginAction:model];
     }
     //分享
     else if ([model.action isEqualToString:@"share"]) {
-        [self shareAction:model];
+        [self shareAction:model view:cell.icon];
     }
 }
 

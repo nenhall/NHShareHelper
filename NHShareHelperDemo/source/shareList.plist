@@ -235,7 +235,7 @@
 		<array>
 			<dict>
 				<key>type</key>
-				<string>al</string>
+				<string>ap</string>
 				<key>action</key>
 				<string>OAuth</string>
 				<key>image</key>
@@ -253,7 +253,7 @@
 			</dict>
 			<dict>
 				<key>type</key>
-				<string>al</string>
+				<string>ap</string>
 				<key>action</key>
 				<string>share</string>
 				<key>image</key>

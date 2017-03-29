@@ -14,7 +14,7 @@
 NSString * const NHWechat   = @"wx";
 NSString * const NHWeiBo    = @"wb";
 NSString * const NHQQ       = @"te";
-NSString * const NHAlibaba  = @"al";
+NSString * const NHAlibaba  = @"ap";
 NSString * const NHFacebook = @"fb";
 NSString * const NHGoogle   = @"go";
 NSString * const NHTwitter  = @"tw";
@@ -48,7 +48,7 @@ static NHShareCallTool *_instance;
             if (obj != nil) {
                 [self.instanceObject setObject:obj forKey:appStr];
             }
-            
+
             Ivar var = class_getInstanceVariable([obj class], "_callDelegate");
             object_setIvar(obj, var, self);
             objc_msgSend(obj, @selector(callRegistApp));
@@ -83,8 +83,11 @@ static NHShareCallTool *_instance;
             openURL:(nonnull NSURL *)url
   sourceApplication:(nullable NSString *)sourceApplication
          annotation:(nonnull id)annotation {
-    
+    NSLog(@"url.scheme:%@---url.host:%@",url.scheme,url.host);
     NSString *appKey = [url.scheme substringToIndex:2];
+    if ([url.host isEqualToString:@"safepay"]) {
+        appKey = @"ap";
+    }
     id appOjb = [_instanceObject objectForKey:appKey];
     
     SEL sel = @selector(callApplication:openURL:sourceApplication:annotation:);
@@ -152,6 +155,7 @@ static NHShareCallTool *_instance;
                                   @"wx" : @"NHWechatCall",
                                   @"wb" : @"NHWeiBoCall",
                                   @"fb" : @"NHFacebookCall",
+                                  @"ap" : @"NHAlibabaCall"
                                   };
     });
     return _instance;

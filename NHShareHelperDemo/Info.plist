@@ -86,6 +86,24 @@
 				<string>wb34799478</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>alipayShare</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>ap20170323063520</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.neghao.share</string>
+			</array>
+		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
@@ -96,6 +114,8 @@
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>alipay</string>
+		<string>alipayshare</string>
+		<string>alipaytlshare</string>
 		<string>wechat</string>
 		<string>weixin</string>
 		<string>sinaweibohd</string>
