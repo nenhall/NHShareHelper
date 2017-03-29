@@ -1,7 +1,7 @@
 ## QQ、微博、微信、Facebook、Google、支付宝、Twitter分享
 <br/>
 
- ![Aaron Swartz](https://github.com/NegHao/NHShareHelper/blob/master/pic.png)
+ ![Aaron Swartz](https://github.com/NegHao/NHShareHelper/blob/master/help/pic.png)
  
  <br/>
  
@@ -149,9 +149,9 @@
 具体的的第三方SDK配置，请参照相应的官方文档；<br/>
 这里说下工程配置：<br/>
 1. 把如下的appID、appSecret设置成你自己的
-![Aaron Swartz](https://github.com/NegHao/NHShareHelper/blob/master/appid.png)
+![Aaron Swartz](https://github.com/NegHao/NHShareHelper/blob/master/help/appid.png)
 2. URL Schemes配置，下面** 行中的key改成你自己的：
-![Aaron Swartz](https://github.com/NegHao/NHShareHelper/blob/master/settiing.png)
+![Aaron Swartz](https://github.com/NegHao/NHShareHelper/blob/master/help/settiing.png)
 3. info.plist配置：<br/>
 info.plist文件右键 > open AS > source code，添加如下配置，注意：是在</plist>前面的</dict>前面添加如下
 
@@ -294,8 +294,10 @@ info.plist文件右键 > open AS > source code，添加如下配置，注意：�
 	</dict>
 ```
 <br/>
-![Aaron Swartz](https://github.com/NegHao/NHShareHelper/blob/master/otherflags.png)
-
+![Aaron Swartz](https://github.com/NegHao/NHShareHelper/blob/master/help/otherflags.png)
+<br/>
+阿里配置说明文档：https://github.com/neghao/NHShareHelper/blob/master/help/AlibabaSetting.md
+<br/>
 #### 五、第三方sdk下载地址：
 因sdk包比较大，所以请自动去官网下载相应的sdk包，也更好保证是官网最新版sdk，本来想用cocoapod管理的，但有些公司的pod库更新得很慢，无法保证sdk的版本，所以还是手动下载吧！下载完成后拖入到`shareSDKS`文件夹下相应的文件夹内：
 <br/>
@@ -304,7 +306,7 @@ wechat: https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resour
 weiBo: http://open.weibo.com/wiki/SDK<br/>
 facebook: https://developers.facebook.com/docs/ios<br/>
 
-![Aaron Swartz](https://github.com/NegHao/NHShareHelper/blob/master/SDK.png)
+![Aaron Swartz](https://github.com/NegHao/NHShareHelper/blob/master/help/SDK.png)
 
 facebook的sdk包会有多个framework库，如果只是使用基础的登录分享功能的话，只需要拖入上图中的几库就可以了。
 
