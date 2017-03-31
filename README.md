@@ -1,4 +1,4 @@
-## QQ、微博、微信、Facebook、Google、支付宝、Twitter分享
+## 登录分享：QQ、微博、微信、Facebook、Google、支付宝、Twitter 
 <br/>
 
  ![Aaron Swartz](https://github.com/NegHao/NHShareHelper/blob/master/help/pic.png)
