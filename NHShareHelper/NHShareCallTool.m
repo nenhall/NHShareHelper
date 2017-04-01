@@ -85,7 +85,9 @@ static NHShareCallTool *_instance;
          annotation:(nonnull id)annotation {
     NSLog(@"url.scheme:%@---url.host:%@",url.scheme,url.host);
     NSString *appKey = [url.scheme substringToIndex:2];
-    if ([url.host isEqualToString:@"safepay"]) {
+    NSString *host = url.host;
+    
+    if ([host isEqualToString:@"safepay"] || [host isEqualToString:@"platformapi"]) {
         appKey = @"ap";
     }
     id appOjb = [_instanceObject objectForKey:appKey];

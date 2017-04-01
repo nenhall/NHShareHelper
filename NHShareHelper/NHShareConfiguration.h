@@ -18,7 +18,7 @@
 
 
 #define FacebookID     @"2437370894235"
-#define AlibabaID      @"20170323063520"
+#define AlibabaID      @"2017032306355520"
 //QQ参数
 #define QQAppID        @"11054672"
 #define QQAppKey       @"xiJ7fsMcHTAbA1el"

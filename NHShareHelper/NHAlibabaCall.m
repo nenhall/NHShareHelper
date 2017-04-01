@@ -36,7 +36,7 @@ NSSingletonM(call);
       sourceApplication:(NSString *)sourceApplication
              annotation:(id)annotation {
     
-    if ([url.scheme isEqualToString:@"ap"]) {
+    if ([url.host isEqualToString:@"platformapi"]) {
       return [APOpenAPI handleOpenURL:url delegate:self];
     }
     if ([url.host isEqualToString:@"safepay"]) {
@@ -103,6 +103,10 @@ NSSingletonM(call);
     }
     NHTipWithMessage(subResp.errStr);
     NHNSLog(@"%@-%d-%@",subResp.errStr,subResp.errCode,subResp.openID);
+    
+    if (_callDelegate && [_callDelegate respondsToSelector:@selector(callType:shareSuccess:errorMsg:)]) {
+        [_callDelegate callType:NHApp_Alibaba shareSuccess:subResp.errCode errorMsg:subResp.errStr];
+    }
 }
 
 
