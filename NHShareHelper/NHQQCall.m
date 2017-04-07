@@ -83,6 +83,8 @@
 
 //登录成功
 - (void)tencentDidLogin {
+    
+    
     BOOL result = YES;
     NSString *error;
     if (_tencentOAuth.accessToken && 0 != [_tencentOAuth.accessToken length])
