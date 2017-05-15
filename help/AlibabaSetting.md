@@ -28,7 +28,7 @@ NHShareHelper/shareSDKs/AliSDK/AliPaySDK/libssl.a
 <br/>
 3. 点击项目名称，点击“Info”选项卡，在“URL Types”选项中，点击“+”，在“URL Schemes”中输入“com.neghao.share”。“com.neghao.share”来自于文件“NHAlibabaCall.m”的NSString *appScheme = @“com.neghao.share”;（改在你自己的，两者保成一致，建议跟商户的app有一定的标示度，要做到和其他的商户app不重复，否则可能会导致支付宝返回的结果无法正确跳回商户app）。
 
-
+#### 注意：SDK付款及登录有两种模式：如果外部存在支付宝钱包，则直接跳转到支付宝钱包付款；不存在的场景下，在SDK内部进行H5支付。测试同学需要关注这两类测试场景。
 官方文档：https://doc.open.alipay.com/docs/doc.htm?spm=a219a.7629140.0.0.a6mex3&treeId=218&articleId=105326&docType=1
 
 
