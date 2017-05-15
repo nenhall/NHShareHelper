@@ -33,7 +33,7 @@
 			<string>tencentApiIdentifier</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>tencent11055188.content</string>
+				<string>tencent1106045343.content</string>
 			</array>
 		</dict>
 		<dict>
@@ -53,7 +53,7 @@
 			<string>tencent</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>tencent11054672</string>
+				<string>tencent1106045343</string>
 			</array>
 		</dict>
 		<dict>

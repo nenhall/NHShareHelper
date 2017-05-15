@@ -18,11 +18,12 @@
 
 
 #define FacebookID     @"2437370894235"
-#define AlibabaID      @"2017032306355520"
+#define AlibabaID      @"2017041406707673"
 //QQ参数
-#define QQAppID        @"11054672"
-#define QQAppKey       @"xiJ7fsMcHTAbA1el"
-
+//#define QQAppID        @"11054672"1106045343
+//#define QQAppKey       @"xiJ7fsMcHTAbA1el"
+#define QQAppID        @"1106045343"
+#define QQAppKey       @"VIfRrh22YXFJ58hu"
 
 //微信参数
 #define WXAppID        @"wx25baeb3cd821ba"

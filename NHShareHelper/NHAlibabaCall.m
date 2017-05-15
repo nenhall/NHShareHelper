@@ -13,7 +13,7 @@
 #import <AlipaySDK/AlipaySDK.h>
 
 
-#define alkey @"MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCkCeC56gs5XhLaeYnIpTAzgTL31wWm6WAlqjDiL7KCyAkMJzdoEDGl4tasqpxHZHbh2qmIaSk86huWRd/ETsV2Ew8gsyIoXHdEIyJ/nPTMQSlTcrJnW+5ue5hGe+NmjV0nkMCZPMDTr2uEqiKO2XV89tpzFPdein55Ka/paYvrXN9Uoo+3UCc6XF6daHg3quCGP5Gj61koJ4P8RFvS2RQWORTspsAnd315fQXl+loFlt6Xl6HblPcZcoXUVyfTgwPI7qZdKYoBSGgxS6cnEu678qnXr498hoQ/jzGlex/J2owsjeJoBVyFK6SZm7P15OxhFlRFpayAU0IdfWoKWgO7AgMBAAECggEALzqc1kpZYvH/8aEul3NgFmQrfYoOGYl14kJHAsiC1/6qBDLCVBbdhIp0DpCsoC1/wPVI/HpyohQxTyndDFM1rRI9t8d7nS1KNXb8NsvE+44DTQBn9zRTyMGTDTAcP+mRmZOmsDf6uLf39+FYQ9K+bfVQ3fN6aWDsmwvylvyJiYDioPRj1tbgLbTnz4p43Cey0OG0nOvl7OVEG1gKUx4hjWAbPcX8+UtfdxpJ6Nd/zqPxdXL6K1AAdH7XgqYxsddPKRDRjbv20arLi24J53x7Sm1cSdkut8fPvjVf6ESyfzNYUKRd1r1UnsvH5SwPcllRG5om7n+MNo1S3dJfoO9ycQKBgQD4o6a7IfXLRiOpyVXB2So0bKln86J0yqFZJI7t0q1eJkTQKNUxzZAIIPOg42+TAwgArwSrNL1p7rUKL1avd08LaygTWVikv6FUcXyECfeDzgysJi7RrvDhYiAf2RZu5HL1toHAGLiBlDwzfWzmgc/364Td95Ub9p/mkArRCPHo8wKBgQCo5RFrLTAK8yKOwLH8dmaHUywg1ZL4n749nINNpAQV1lEWU3ApDe/AT9fr6DdUg6dTwvyoSJMYKAzBlyrShwjhcjjGWIXSEFdMieKTEDaHLXA+sO07GM6/QssDVzEAyAUqAUBf+KvSKVQuxFllLwqcSXUnVblDbxoAZ+rdcq2sGQKBgA/REUUsNt+UeaZOWXc4YlftZaVoOThmv3bVPYZhdYfctVnsjwtZAUWTGwxsC2f1tGeeupRNiZMYjUm1kzUcSNn4GheJAnuQeSnPAlW/8I/g5qt4zlemYkpkHJkKDURGog2Ba6WVrP8JN/8qhmfvcBRcVhpsqn6Z5LgdB6Meh40DAoGAV52tsZnZiHSlAsU4EC4j9iPRip8BBXVpLXEaNJbXf7SUkC5syv9t1qgU7U6kFXXOwgcvJuWvWSK9q1gOYPSoSLwGc+7MTTMo9o25Om14vBt4VS1XhAbUiifORUdgJnWdKDNJ//9ysy25fCFj9re2m2kIG4W+/BqQtJE0J/kr21ECgYAUGTd0UHv8SHJT1kcCHitMFl/ILzEHemSpqSeddP/j+iRhxbwjHoLBHpyKZhNqgL44G5PsajsYh2piV03xxQfuxGeAO+KcM9ikB9LrQQjEmG938III4779VXF0cDpqmNmSvMi6lIzc4U7oMezZe1AKESCvZyq2PgiA80fO6mc4Yw=="
+#define alkey @"MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDYtP8YctbktjTMCEq/8uZcG9m/i/yYR+fyOVimVeTn2fBoFE11tpWvLNhYV3PXhQ7OequBnoxp6lrrE0UQ+oirnfRsd/eQFjVrkd59ACNAbInsrvsXBNiu6nUoJQTPP7VmLVD5077ct5X68aYvEuz7CdlaUoLtRFz60rfs56E2ykI+HfO3UBFkK3tITq5lJ0zpVLdmfyqaoS/7j7pglOoRPSDA+F1pB3ClbSJyVwF+G6q+wbXj0+eW9EJ0zoCkr7VxGEgnT3HJRHUsjNXx07UzJgYxtvNGCMRqi8tXb8h1kWRODSuikJEvwcRCqbVj+lepSPi0+jFvn2nu1u7R8JmdAgMBAAECggEBAKbStuoIRdutVHmZDIo1oBZaLkdhqWNFP45djRwHVX8SbBqDPpoWo6ZF3IotUHUh7iMPlgXjmu5SRglfPTTz2NBceXQi6kZWgms70M3jlD+dDpRQo+S1i2UkAmqUDN7KiYeN7R9VXUGmZmPXMPpeFGawz0zT5gxnKzi/jG1oZte4cqMn7nxHduIVYGEe5KqNkySsqTNRNvxbiLYEwWna1mW9mIt/KdLDkQEZobl4h4go+aqiJhV/UTI8Y6pLyXDPONQ3BN5hvdk+Q/JRkCj9pDp6STSJEBD8bYTh3kY8xBe9LkvgQ7oG6f/l/IEXi8D9lLsv5z2rjKOLyCJwDd6eGDUCgYEA/ZVj63LdwmLJzJFl3VZhIA83Ymvl2071rWKeloJrEHi8SI0vwaeFI0FuLfnt9ulAZv6dXgDpP9rBdWH4lRYZd/pLr7aQ63NVCbNo62xtE1AMRUv9mGwqV3GIMoXKYC8v4TlLEE+mdq5S4Xr2CsE2p+ixjzSs8NUGumQrnong9vMCgYEA2sWlnD7/PppKzOihZJGCrJwWkt6RE+tK3v8RkTwUxTWoRmI23WBPZMtuTgUU+LJGOaju8YvI9CfDmtm2dMgMlpSfCJV9HJa7ijhW/F1GX9cfcDFQQR6Pr6/nDwXInFQyV4DYvWSw+kubFJK3aYAQq0nFIkLamTrb2Y9tiIVWcS8CgYAYETGmiwRZCp80dyg/1Y7qSAdto+fw5JGUnyOGDWKz8YGNMTkzG/8a1X7rhij7oi+mlsvAvD1m/hAWX/ID1FEeffbo+l7Oued8QDbZATVo+9PuT8QFz15FZlUS1nfaoR/eNF3XcnfOE8Vx+QWZB7V0QjV37fvr74vv7MnnBhb/2QKBgD1HQWUrjClH5I3S12opC/Y3XmdTKkXvETC3N3972cGHjxPv7LhDgtmT1djKuZ4TqXH7LLrB0c752GNmeiHp6wS+qnEoFjxMyEkmEM9tfQnZYvf1CCrFWa/3UHw3vYJ0Xwl9kLg0HRJu3Qh9NBy7/29LIYnAOiTThMNC1oZ3+seHAoGANNAjN4u3I7yn8QpjXhyYEepqAwcAHtgolNJzWYw9HN0n5UpY1owSGTAi0E87GFy7g0Q/h/lm5SwkvB0xEFtF25QubImd4Dx38LhTBqPzaAIqBgU+vh7v92VnmFqgUOGsjVUI0mrRNzSa7XAKNFEXsvuG6HciUxFPOpKQbvwAuSE="
 
 
 @interface NHAlibabaCall ()<APOpenAPIDelegate>
@@ -39,13 +39,14 @@ NSSingletonM(call);
     if ([url.host isEqualToString:@"platformapi"]) {
       return [APOpenAPI handleOpenURL:url delegate:self];
     }
+    __weak __block typeof(self)weakself = self;
     if ([url.host isEqualToString:@"safepay"]) {
         //跳转支付宝钱包进行支付，处理支付结果
         [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
             NHNSLog(@"result1111 = %@",resultDic);
         }];
         
-        // 授权跳转支付宝钱包进行支付，处理支付结果
+        // 授权跳转支付宝钱包进行支付 处理支付结果
         [[AlipaySDK defaultService] processAuth_V2Result:url standbyCallback:^(NSDictionary *resultDic) {
             NHNSLog(@"result2222 = %@",resultDic);
             // 解析 auth code
@@ -60,6 +61,7 @@ NSSingletonM(call);
                     }
                 }
             }
+           
             NHNSLog(@"授权结果 authCode = %@", authCode?:@"");
         }];
 
@@ -112,12 +114,11 @@ NSSingletonM(call);
 
 #pragma mark - =============== 授权相关 ===============
 //MARK: =============== 授权相关 ===============
-- (void)alipayAuth{
-
-    //商户id
-    NSString *pid = @"2088102169625619";
+- (void)alipayAuth2 {
     //appid
-    NSString *appID = @"2017032306355520";
+    //商户id
+    NSString *pid = @"2088621832374680";
+    
     
     //私钥，rsa2PrivateKey 或者 rsaPrivateKey 只需要填入一个
     //配置密钥:https://doc.open.alipay.com/doc2/detail.htm?treeId=204&articleId=105297&docType=1#s1
@@ -126,9 +127,9 @@ NSSingletonM(call);
     
     //pid和appID获取失败,提示
     if ([pid length] == 0 ||
-        [appID length] == 0 ||
+        [AlibabaID length] == 0 ||
         ([rsa2PrivateKey length] == 0 && [rsaPrivateKey length] == 0))
-    {
+        {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示"
                                                         message:@"缺少pid或者appID或者私钥。"
                                                        delegate:self
@@ -136,12 +137,12 @@ NSSingletonM(call);
                                               otherButtonTitles:nil];
         [alert show];
         return;
-    }
+        }
     
     //生成 auth info 对象
     NHAliAuthV2info *authInfo = [NHAliAuthV2info new];
     authInfo.pid = pid;
-    authInfo.appID = appID;
+    authInfo.appID = AlibabaID;
     
     //auth type
     NSString *authType = [[NSUserDefaults standardUserDefaults] objectForKey:@"authType"];
@@ -150,7 +151,7 @@ NSSingletonM(call);
     }
     
     //应用注册scheme,在AlixPayDemo-Info.plist定义URL types
-    NSString *appScheme = @"com.neghao.share";
+    NSString *appScheme = @"ap2017032306355520";
     
     // 将授权信息拼接成字符串
     NSString *authInfoStr = [authInfo description];
@@ -166,13 +167,106 @@ NSSingletonM(call);
     }
     
     // 将签名成功字符串格式化为订单字符串,请严格按照该格式
+    __weak __block typeof(self)weakself = self;
+    
     if (signedString.length > 0) {
         NSString *rsaType = (rsa2PrivateKey.length > 1) ? @"RSA2":@"RSA";
         authInfoStr = [NSString stringWithFormat:@"%@&sign=%@&sign_type=%@", authInfoStr, signedString, rsaType];
+        
+        //ap2017032306355520
+        APayAuthInfo *info = [[APayAuthInfo alloc] initWithAppID:AlibabaID pid:pid redirectUri:@"ap2017032306355520"];
+        
+        [[AlipaySDK defaultService] authWithInfo:info callback:^(NSDictionary *resultDic) {
+            NHNSLog(@"快登结果 resultDic = %@", resultDic);
+        }];
+    }
+
+}
+
+- (void)alipayAuth{
+    
+    //appid
+    //商户id
+    NSString *pid = @"2088621832374680";
+    
+    
+    //私钥，rsa2PrivateKey 或者 rsaPrivateKey 只需要填入一个
+    //配置密钥:https://doc.open.alipay.com/doc2/detail.htm?treeId=204&articleId=105297&docType=1#s1
+    NSString *rsa2PrivateKey = alkey;
+    NSString *rsaPrivateKey = @"";
+    
+    //pid和appID获取失败,提示
+    if ([pid length] == 0 ||
+        [AlibabaID length] == 0 ||
+        ([rsa2PrivateKey length] == 0 && [rsaPrivateKey length] == 0))
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示"
+                                                        message:@"缺少pid或者appID或者私钥。"
+                                                       delegate:self
+                                              cancelButtonTitle:@"确定"
+                                              otherButtonTitles:nil];
+        [alert show];
+        return;
+    }
+    
+    //生成 auth info 对象
+    NHAliAuthV2info *authInfo = [NHAliAuthV2info new];
+    authInfo.pid = pid;
+    authInfo.appID = AlibabaID;
+    
+    //auth type
+    NSString *authType = [[NSUserDefaults standardUserDefaults] objectForKey:@"authType"];
+    if (authType) {
+        authInfo.authType = authType;
+    }
+    
+    //应用注册scheme,在AlixPayDemo-Info.plist定义URL types
+    NSString *appScheme = @"mijialive";
+    
+    // 将授权信息拼接成字符串
+    NSString *authInfoStr = [authInfo description];
+    NHNSLog(@"authInfoStr = %@",authInfoStr);
+    
+    // 获取私钥并将商户信息签名,外部商户可以根据情况存放私钥和签名,只需要遵循RSA签名规范,并将签名字符串base64编码和UrlEncode
+    NSString *signedString = nil;
+    RSADataSigner* signer = [[RSADataSigner alloc] initWithPrivateKey:((rsa2PrivateKey.length > 1)?rsa2PrivateKey:rsaPrivateKey)];
+    if ((rsa2PrivateKey.length > 1)) {
+        signedString = [signer signString:authInfoStr withRSA2:YES];
+    } else {
+        signedString = [signer signString:authInfoStr withRSA2:NO];
+    }
+    
+    // 将签名成功字符串格式化为订单字符串,请严格按照该格式
+    __weak __block typeof(self)weakself = self;
+
+    if (signedString.length > 0) {
+        NSString *rsaType = (rsa2PrivateKey.length > 1) ? @"RSA2":@"RSA";
+        authInfoStr = [NSString stringWithFormat:@"%@&sign=%@&sign_type=%@", authInfoStr, signedString, rsaType];
+        
         [[AlipaySDK defaultService] auth_V2WithInfo:authInfoStr
                                          fromScheme:appScheme
                                            callback:^(NSDictionary *resultDic)
         {
+         /**
+         {
+         memo = "";
+         result = "success=true&auth_code=7404f97d7c8c45919b3f460b28e7OE56&result_code=200&alipay_open_id=20880047939342960822699332410756&user_id=2088702023078560";
+         resultStatus = 9000;
+         }
+         
+         状态码（resultStatus）	状态描述
+         9000	请求处理成功
+         4000	系统异常
+         6001	用户中途取消
+         6002	网络连接出错
+         
+         状态码（result_code）	状态描述
+         200	业务处理成功，会返回authCode
+         1005	账户已冻结，如有疑问，请联系支付宝技术支持
+         202	系统异常，请稍后再试或联系支付宝技术支持
+         
+         app_id=&method=&format=&charset=&sign_type=&sign=&timestamp=&version=&auth_token=&app_auth_token=
+         */
             NHNSLog(@"result = %@",resultDic);
             NSString *result = resultDic[@"result"];
             NSString *authCode = nil;
@@ -186,10 +280,29 @@ NSSingletonM(call);
                     }
                 }
             }
+        NHTipWithMessage([NSString stringWithFormat:@"授权结果 authCode = %@",authCode]);
+        if (weakself.callDelegate && [weakself.callDelegate respondsToSelector:@selector(callType:loginSuccess:errorMsg:)]) {
+            [weakself.callDelegate callType:NHApp_Alibaba
+                               loginSuccess:authCode == nil ? NO : YES
+                                   errorMsg:[resultDic objectForKey:@"result_code"]];
+        }
+        
+        if (weakself.callDelegate && [weakself.callDelegate respondsToSelector:@selector(callType:userinfo:errorMsg:)]) {
+            [weakself.callDelegate callType:NHApp_Alibaba
+                                   userinfo:[resultDic objectForKey:@"auth_code"]
+                                   errorMsg:[resultDic objectForKey:@"result_code"]];
+        }
             NHNSLog(@"授权结果 authCode = %@", authCode?:@"");
+        NSLog(@"[[AlipaySDK defaultService] fetchTradeToken]:%@",[[AlipaySDK defaultService] fetchTradeToken]);
+
         }];
+    
+        //670f34ecfb1848478bc8491b0746TX56
+        //46d72f67931f47d085bf7b5ab43fSX56
     }
 }
+
+
 
 
 #pragma mark - =============== 分享相关 ===============
