@@ -12,7 +12,9 @@
 8. 商家如果仅使用支付宝id进行快速登录，则本次产品调用流程结束；商家如果需要更多授权支付宝用户的信息，则使用之前获取的token调用“支付宝用户信息查询接口”查询用户基本信息。
 <br/>
 在Build Phases选项卡的Link Binary With Libraries中，增加以下依赖：
+
 ![Aaron Swartz](https://github.com/NegHao/NHShareHelper/blob/master/help/alibabaframework.png)
+
 <br/>
 `TARGETS > Build Setting > Other Linker Flags 添加 -ObjC`
 <br/>
