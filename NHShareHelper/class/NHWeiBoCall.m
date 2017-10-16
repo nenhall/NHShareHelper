@@ -8,6 +8,14 @@
 
 #import "NHWeiBoCall.h"
 
+/**
+ pod "Weibo_SDK", :git => "https://github.com/sinaweibosdk/weibo_ios_sdk.git"
+ other linker Flags: -Objc
+ s.frameworks   = 'Photos', 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
+ s.libraries = 'sqlite3', 'z'
+ 
+ 
+ */
 
 @interface NHWeiBoCall ()<WeiboSDKDelegate,WBHttpRequestDelegate>
 @property (nonatomic, copy  ) NSString *open_id;

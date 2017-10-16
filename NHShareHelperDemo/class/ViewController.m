@@ -12,7 +12,7 @@
 #import "NHShareCell.h"
 #import "NHReusableView.h"
 #import "NHShareModel.h"
-#import "NHFacebookCall.h"
+//#import "NHFacebookCall.h"
 #import "NHQQCall.h"
 #import "NHWechatCall.h"
 #import "NHWeiBoCall.h"
@@ -22,7 +22,7 @@
 #define loadImage(name)   [NSString stringWithFormat:@"NHShareResources.bundle/PlatformTheme/%@",(name)]
 
 
-@interface ViewController ()<NHShareCallToolDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,FBSDKLoginButtonDelegate>
+@interface ViewController ()<NHShareCallToolDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic, strong) NSMutableArray *itemDataSource;
 @property (nonatomic, copy  ) NSArray *sectionTitles;
@@ -222,9 +222,9 @@
     cell.icon.image = [UIImage imageNamed:loadImage(model.image)];
     cell.name.text = model.title;
     if ([model.type isEqualToString:@"Facebook"]) {
-        FBSDKProfilePictureView *profilePic = [[FBSDKProfilePictureView alloc]
-                                               initWithFrame:cell.icon.bounds];
-        [cell.icon addSubview:profilePic];
+//        FBSDKProfilePictureView *profilePic = [[FBSDKProfilePictureView alloc]
+//                                               initWithFrame:cell.icon.bounds];
+//        [cell.icon addSubview:profilePic];
     }
     return cell;
 }

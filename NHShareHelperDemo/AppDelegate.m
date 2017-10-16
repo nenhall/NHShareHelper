@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "NHShareCallTool.h"
-#import "NHFacebookCall.h"
+
 
 @interface AppDelegate ()
 
@@ -25,9 +25,9 @@
     
     
     //需要使用到facebook才需要调用
-    [NHFacebookCall application:application
-didFinishLaunchingWithOptions:launchOptions
-enableUpdatesOnAccessTokenChange:YES];
+//    [NHFacebookCall application:application
+//didFinishLaunchingWithOptions:launchOptions
+//enableUpdatesOnAccessTokenChange:YES];
     
     return YES;
 }
@@ -62,7 +62,7 @@ enableUpdatesOnAccessTokenChange:YES];
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     //需要使用到facebook记录功能才需要调用
-    [NHFacebookCall activateApp];
+//    [NHFacebookCall activateApp];
 }
 
 @end

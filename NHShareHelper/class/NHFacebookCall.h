@@ -11,6 +11,12 @@
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 
+/**
+ pod 'FBSDKCoreKit'
+ pod 'FBSDKShareKit'
+ pod 'FBSDKLoginKit'
+ 如果使用 use_frameworks! 标记，您必须将 pod 'Bolts' 添加至 FBSDKCoreKit 依赖项之前
+ */
 
 @class FBSDKProfile,FBSDKAccessToken,FBSDKLoginManagerLoginResult;
 

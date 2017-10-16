@@ -10,6 +10,20 @@
 #import "NHWechatCall.h"
 #import "NHApiRequestHelper.h"
 
+/**
+ pod 'WechatOpenSDK'
+ 对于之前SDK放在主工程目录下，切换成CocoaPods的形式，执行pod install 之后，出现
+ * Use the $(inherited) flag, or
+ * Remove the build settings from the target.
+ 解决方法是 把工程target中的build Setting里面PODS_ROOT的值替换成$(inherited)
+ Other Linker Flags中 -all_load 替换成$(inherited)
+ 
+ 工程文件中选择Build Setting，在"Other Linker Flags"中加入"-Objc -all_load"
+ 
+ s.frameworks = SystemConfiguration.framework, Security.framework, CoreTelephony.framework, CFNetwork.framework
+ s.libraries  = libz.dylib, libsqlite3.0.dylib, libc++.dylib,
+
+ */
 
 @class NHShareCallTool;
 @interface NHWechatCall ()

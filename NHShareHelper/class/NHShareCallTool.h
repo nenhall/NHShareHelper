@@ -10,7 +10,7 @@
 #import "NHQQCall.h"
 #import "NHWeiBoCall.h"
 #import "NHWechatCall.h"
-#import "NHFacebookCall.h"
+//#import "NHFacebookCall.h"
 #import "NHAlibabaCall.h"
 
 

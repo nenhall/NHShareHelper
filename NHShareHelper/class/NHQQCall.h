@@ -27,8 +27,6 @@ typedef NS_ENUM(NSInteger, NHQQShareType) {
 @property (nonatomic, assign) id<NHCallProtocol> callDelegate;
 
 
-//NSSingletonH(QQCall)
-
 - (BOOL)qqApplication:(UIApplication *)application
               openURL:(NSURL *)url
     sourceApplication:(NSString *)sourceApplication

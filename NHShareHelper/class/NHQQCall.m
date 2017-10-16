@@ -10,6 +10,9 @@
 #import "NHSingleton.h"
 #import "NHShareConfiguration.h"
 
+/**
+ 
+ */
 
 @interface NHQQCall ()
 @property (nonatomic, strong) TencentOAuth *tencentOAuth;
@@ -22,7 +25,6 @@
 @end
 
 @implementation NHQQCall
-//NSSingletonM(QQCall)
 
 
 /**
