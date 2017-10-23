@@ -1,0 +1,1 @@
+../../../../../NHShareHelper/shareSDKs/libWeiboSDK/WBHttpRequest+WeiboUser.h

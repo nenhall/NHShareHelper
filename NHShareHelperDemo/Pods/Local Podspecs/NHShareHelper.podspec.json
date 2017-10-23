@@ -1,0 +1,40 @@
+{
+  "name": "NHShareHelper",
+  "version": "1.0.0",
+  "license": "LICENSE",
+  "homepage": "https://github.com/neghao/NHShareHelper",
+  "authors": {
+    "neghao_pro": "neghao@126.com"
+  },
+  "summary": "iOS 分享工具类",
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "https://github.com/neghao/NHShareHelper.git",
+    "tag": "1.0.0"
+  },
+  "source_files": "NHShareHelper/**/*.{h,m}",
+  "frameworks": [
+    "UIKit",
+    "Foundation",
+    "Photos",
+    "CoreMotion",
+    "Security",
+    "SystemConfiguration",
+    "CoreGraphics",
+    "CoreTelephony",
+    "CFNetwork",
+    "QuartzCore",
+    "ImageIO",
+    "CoreText"
+  ],
+  "libraries": [
+    "z",
+    "iconv",
+    "stdc",
+    "sqlite3",
+    "sqlite3.0"
+  ],
+  "requires_arc": true
+}
