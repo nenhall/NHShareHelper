@@ -1,1 +1,1 @@
-../../../../../NHShareHelper/class/NHQQCall.h
+../../../../../NHShareHelper/QQ/NHQQCall.h

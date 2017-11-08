@@ -1,1 +1,1 @@
-../../../../../NHShareHelper/class/NHSingleton.h
+../../../../../NHShareHelper/Gener/NHSingleton.h

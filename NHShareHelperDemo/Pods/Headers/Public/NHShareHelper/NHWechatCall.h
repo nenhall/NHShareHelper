@@ -1,1 +1,1 @@
-../../../../../NHShareHelper/class/NHWechatCall.h
+../../../../../NHShareHelper/Wechat/NHWechatCall.h

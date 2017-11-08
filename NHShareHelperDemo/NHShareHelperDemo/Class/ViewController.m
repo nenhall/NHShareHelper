@@ -17,6 +17,7 @@
 #import "NHWechatCall.h"
 #import "NHWeiBoCall.h"
 #import "FTPopOverMenu.h"
+#import <objc/message.h>
 
 #define loadNib(nibName)  [UINib nibWithNibName:nibName bundle:nil]
 #define loadImage(name)   [NSString stringWithFormat:@"NHShareResources.bundle/PlatformTheme/%@",(name)]
@@ -42,7 +43,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     [[NHShareCallTool sharedCallTool] addDelegate:self];
     
     _sectionList = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"shareList" ofType:@"plist"]];

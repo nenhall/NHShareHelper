@@ -1,1 +1,1 @@
-../../../../../NHShareHelper/class/NHCallProtocol.h
+../../../../../NHShareHelper/Gener/NHCallProtocol.h

@@ -1,1 +1,1 @@
-../../../../../NHShareHelper/shareSDKs/WeChatSDK/WXApi.h
+../../../../../NHShareHelper/Wechat/WeChatSDK/WXApi.h

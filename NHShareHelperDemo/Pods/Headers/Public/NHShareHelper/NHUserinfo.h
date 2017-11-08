@@ -1,1 +1,1 @@
-../../../../../NHShareHelper/class/NHUserinfo.h
+../../../../../NHShareHelper/Gener/NHUserinfo.h

@@ -1,1 +1,1 @@
-../../../../../NHShareHelper/shareSDKs/libWeiboSDK/WeiboSDK.h
+../../../../../NHShareHelper/WeiBo/WeiboSDK/WeiboSDK.h

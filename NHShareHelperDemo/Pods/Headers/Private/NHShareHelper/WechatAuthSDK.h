@@ -1,1 +1,1 @@
-../../../../../NHShareHelper/shareSDKs/WeChatSDK/WechatAuthSDK.h
+../../../../../NHShareHelper/Wechat/WeChatSDK/WechatAuthSDK.h

@@ -1,1 +1,1 @@
-../../../../../NHShareHelper/class/NHApiRequestHelper.h
+../../../../../NHShareHelper/Gener/NHApiRequestHelper.h

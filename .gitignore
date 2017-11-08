@@ -20,7 +20,7 @@ xcuserdata/
 ## Other
 *.moved-aside
 *.xcuserstate
-*.framework
+# *.framework
 *.a
 
 ## Obj-C/Swift specific

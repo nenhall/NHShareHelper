@@ -1,6 +1,17 @@
 PODS:
   - FTPopOverMenu (1.3.3)
-  - NHShareHelper (1.0.0)
+  - NHShareHelper (1.0.0):
+    - NHShareHelper/Gener (= 1.0.0)
+    - NHShareHelper/QQ (= 1.0.0)
+    - NHShareHelper/Wechat (= 1.0.0)
+    - NHShareHelper/WeiBo (= 1.0.0)
+  - NHShareHelper/Gener (1.0.0)
+  - NHShareHelper/QQ (1.0.0):
+    - NHShareHelper/Gener
+  - NHShareHelper/Wechat (1.0.0):
+    - NHShareHelper/Gener
+  - NHShareHelper/WeiBo (1.0.0):
+    - NHShareHelper/Gener
 
 DEPENDENCIES:
   - FTPopOverMenu
@@ -12,7 +23,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FTPopOverMenu: a12bb907b8402acc4566ce3ac85f706e09af19e8
-  NHShareHelper: 62d411242d2c3ec249a107ba2e18f19e1e7a2540
+  NHShareHelper: 2959ef6e048dd0ef0c3bf2910ff95594e23d30ee
 
 PODFILE CHECKSUM: ae7b223e542b8c3e24d1cbf050a846e3880c992e
 

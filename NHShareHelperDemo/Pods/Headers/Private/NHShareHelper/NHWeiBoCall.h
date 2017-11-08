@@ -1,1 +1,1 @@
-../../../../../NHShareHelper/class/NHWeiBoCall.h
+../../../../../NHShareHelper/WeiBo/NHWeiBoCall.h

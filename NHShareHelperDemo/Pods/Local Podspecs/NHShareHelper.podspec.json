@@ -14,27 +14,90 @@
     "git": "https://github.com/neghao/NHShareHelper.git",
     "tag": "1.0.0"
   },
-  "source_files": "NHShareHelper/**/*.{h,m}",
-  "frameworks": [
-    "UIKit",
-    "Foundation",
-    "Photos",
-    "CoreMotion",
-    "Security",
-    "SystemConfiguration",
-    "CoreGraphics",
-    "CoreTelephony",
-    "CFNetwork",
-    "QuartzCore",
-    "ImageIO",
-    "CoreText"
-  ],
-  "libraries": [
-    "z",
-    "iconv",
-    "stdc",
-    "sqlite3",
-    "sqlite3.0"
-  ],
-  "requires_arc": true
+  "requires_arc": true,
+  "subspecs": [
+    {
+      "name": "Gener",
+      "source_files": "NHShareHelper/Gener/*.{h,m}"
+    },
+    {
+      "name": "QQ",
+      "dependencies": {
+        "NHShareHelper/Gener": [
+
+        ]
+      },
+      "source_files": "NHShareHelper/QQ/*.{h,m,md}",
+      "resources": "NHShareHelper/QQ/TencentOpenApi/TencentOpenApi_IOS_Bundle.bundle",
+      "ios": {
+        "frameworks": [
+          "Security",
+          "SystemConfiguration",
+          "CoreGraphics",
+          "CoreTelephony"
+        ],
+        "libraries": [
+          "iconv",
+          "stdc++",
+          "z",
+          "sqlite3"
+        ]
+      },
+      "vendored_frameworks": "NHShareHelper/QQ/TencentOpenApi/TencentOpenApi.framework",
+      "public_header_files": "NHShareHelper/QQ/*.{h}"
+    },
+    {
+      "name": "Wechat",
+      "dependencies": {
+        "NHShareHelper/Gener": [
+
+        ]
+      },
+      "source_files": [
+        "NHShareHelper/Wechat/*.{h,m,md}",
+        "NHShareHelper/Wechat/WeChatSDK/*.{h,txt}"
+      ],
+      "ios": {
+        "frameworks": [
+          "UIKit",
+          "CoreGraphics"
+        ]
+      },
+      "vendored_libraries": "NHShareHelper/Wechat/WeChatSDK/libWeChatSDK.a",
+      "public_header_files": "NHShareHelper/Wechat/*.{h}"
+    },
+    {
+      "name": "WeiBo",
+      "dependencies": {
+        "NHShareHelper/Gener": [
+
+        ]
+      },
+      "source_files": [
+        "NHShareHelper/WeiBo/*.{h,m,md}",
+        "NHShareHelper/WeiBo/WeiboSDK/*.{h}"
+      ],
+      "resources": "NHShareHelper/WeiBo/WeiboSDK/WeiboSDK.bundle",
+      "frameworks": [
+        "Photos",
+        "ImageIO",
+        "SystemConfiguration",
+        "CoreText",
+        "QuartzCore",
+        "Security",
+        "UIKit",
+        "Foundation",
+        "CoreGraphics",
+        "CoreTelephony"
+      ],
+      "ios": {
+        "libraries": [
+          "z",
+          "sqlite3"
+        ]
+      },
+      "vendored_libraries": "NHShareHelper/WeiBo/WeiboSDK/libWeiboSDK.a",
+      "public_header_files": "NHShareHelper/WeiBo/*.{h}"
+    }
+  ]
 }

@@ -1,8 +1,9 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../NHShareHelper/QQ/TencentOpenApi"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/FTPopOverMenu" "${PODS_ROOT}/Headers/Public/NHShareHelper"
-LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/FTPopOverMenu" "$PODS_CONFIGURATION_BUILD_DIR/NHShareHelper"
+LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/FTPopOverMenu" "$PODS_CONFIGURATION_BUILD_DIR/NHShareHelper" "${PODS_ROOT}/../../NHShareHelper/Wechat/WeChatSDK" "${PODS_ROOT}/../../NHShareHelper/WeiBo/WeiboSDK"
 OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/FTPopOverMenu" -isystem "${PODS_ROOT}/Headers/Public/NHShareHelper"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"FTPopOverMenu" -l"NHShareHelper" -l"iconv" -l"sqlite3" -l"sqlite3.0" -l"stdc" -l"z" -framework "CFNetwork" -framework "CoreGraphics" -framework "CoreMotion" -framework "CoreTelephony" -framework "CoreText" -framework "Foundation" -framework "ImageIO" -framework "Photos" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"FTPopOverMenu" -l"NHShareHelper" -l"WeChatSDK" -l"WeiboSDK" -l"iconv" -l"sqlite3" -l"stdc++" -l"z" -framework "CoreGraphics" -framework "CoreTelephony" -framework "CoreText" -framework "Foundation" -framework "ImageIO" -framework "Photos" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "TencentOpenAPI" -framework "UIKit"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

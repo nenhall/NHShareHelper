@@ -1,1 +1,1 @@
-../../../../../NHShareHelper/class/NHShareConfiguration.h
+../../../../../NHShareHelper/Gener/NHShareConfiguration.h
