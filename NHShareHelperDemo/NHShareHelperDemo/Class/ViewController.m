@@ -13,11 +13,12 @@
 #import "NHReusableView.h"
 #import "NHShareModel.h"
 //#import "NHFacebookCall.h"
-#import "NHQQCall.h"
-#import "NHWechatCall.h"
+//#import "NHQQCall.h"
+//#import "NHWechatCall.h"
 #import "NHWeiBoCall.h"
 #import "FTPopOverMenu.h"
 #import <objc/message.h>
+
 
 #define loadNib(nibName)  [UINib nibWithNibName:nibName bundle:nil]
 #define loadImage(name)   [NSString stringWithFormat:@"NHShareResources.bundle/PlatformTheme/%@",(name)]
@@ -49,8 +50,9 @@
     _sectionList = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"shareList" ofType:@"plist"]];
     [self.listView registerNib:loadNib(@"NHShareCell") forCellWithReuseIdentifier:@"cell"];
     [self.listView registerNib:loadNib(@"NHReusableView") forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"head"];
+    
 }
-
+/**
 
 - (void)loginAction:(NHItemModel *)model{
     [NHShareCallTool loginSetAppConst:model.type viewController:nil];
@@ -269,7 +271,7 @@
     }
     return _logs;
 }
-
+*/
 
 
 @end

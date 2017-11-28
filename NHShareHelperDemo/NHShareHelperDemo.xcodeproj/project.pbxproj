@@ -23,6 +23,7 @@
 		0A26E7791F9E36CE00C520E5 /* NHShareResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A26E7701F9E36CE00C520E5 /* NHShareResources.bundle */; };
 		0A26E77A1F9E36CE00C520E5 /* shareList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A26E7711F9E36CE00C520E5 /* shareList.plist */; };
 		0A26E77B1F9E36CE00C520E5 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A26E7721F9E36CE00C520E5 /* test.png */; };
+		0AA242011FCD968C0087445D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA241FF1FCD968C0087445D /* MainViewController.m */; };
 		CB926E1024AD517679C5820C /* libPods-NHShareHelperDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3518379D02213C540B3451D3 /* libPods-NHShareHelperDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,8 @@
 		0A26E7701F9E36CE00C520E5 /* NHShareResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NHShareResources.bundle; sourceTree = "<group>"; };
 		0A26E7711F9E36CE00C520E5 /* shareList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = shareList.plist; sourceTree = "<group>"; };
 		0A26E7721F9E36CE00C520E5 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		0AA241FE1FCD968C0087445D /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		0AA241FF1FCD968C0087445D /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		3518379D02213C540B3451D3 /* libPods-NHShareHelperDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NHShareHelperDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47C14826F6B1535895F9BF8C /* Pods-NHShareHelperDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHShareHelperDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NHShareHelperDemo/Pods-NHShareHelperDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D037FB58CFCE7F474B9EA888 /* Pods-NHShareHelperDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHShareHelperDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NHShareHelperDemo/Pods-NHShareHelperDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -180,6 +183,8 @@
 				0A26E76C1F9E36CE00C520E5 /* NHShareModel.m */,
 				0A26E76D1F9E36CE00C520E5 /* ViewController.h */,
 				0A26E76E1F9E36CE00C520E5 /* ViewController.m */,
+				0AA241FE1FCD968C0087445D /* MainViewController.h */,
+				0AA241FF1FCD968C0087445D /* MainViewController.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -379,7 +384,6 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-NHShareHelperDemo/Pods-NHShareHelperDemo-resources.sh",
-				"${PODS_ROOT}/../../NHShareHelper/QQ/TencentOpenApi/TencentOpenApi_IOS_Bundle.bundle",
 				"${PODS_ROOT}/../../NHShareHelper/WeiBo/WeiboSDK/WeiboSDK.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -402,6 +406,7 @@
 				0A26E7771F9E36CE00C520E5 /* NHShareModel.m in Sources */,
 				0A26E7731F9E36CE00C520E5 /* NHReusableView.m in Sources */,
 				0A26E7751F9E36CE00C520E5 /* NHShareCell.m in Sources */,
+				0AA242011FCD968C0087445D /* MainViewController.m in Sources */,
 				0A26E7421F9E369300C520E5 /* main.m in Sources */,
 				0A26E7341F9E369300C520E5 /* AppDelegate.m in Sources */,
 			);

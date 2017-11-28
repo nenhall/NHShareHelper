@@ -1,1 +1,0 @@
-../../../../../../NHShareHelper/QQ/TencentOpenApi/TencentOpenAPI.framework/Headers/sdkdef.h

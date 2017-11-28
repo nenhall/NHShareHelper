@@ -7,9 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NHShareConfiguration.h"
 #import "NHCallProtocol.h"
 #import "NHUserinfo.h"
 #import "NHSingleton.h"
+
+#if __has_include("NHWeiBoCall.h")
+#import "NHWeiBoCall.h"
+#endif
+
+#if __has_include("NHWeiBoCall.h")
+//#import "NHQQCall.h"
+#endif
+
+#if __has_include("NHWeiBoCall.h")
+//#import "NHWechatCall.h"
+#endif
 
 
 UIKIT_EXTERN NSString * const NHWechat;

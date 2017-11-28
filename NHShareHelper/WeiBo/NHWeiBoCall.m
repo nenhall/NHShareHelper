@@ -7,6 +7,7 @@
 //
 
 #import "NHWeiBoCall.h"
+#include "WeiboSDK/WeiboSDK.h"
 
 /**
  pod "Weibo_SDK", :git => "https://github.com/sinaweibosdk/weibo_ios_sdk.git"

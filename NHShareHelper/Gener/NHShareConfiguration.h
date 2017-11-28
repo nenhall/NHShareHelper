@@ -66,7 +66,6 @@
 
 //自定提醒窗口
 NS_INLINE void NHTipWithMessage(NSString *message){
-    
     dispatch_async(dispatch_get_main_queue(), ^{
         UIAlertView *alerView = [[UIAlertView alloc] initWithTitle:@"提示" message:message delegate:nil cancelButtonTitle:nil otherButtonTitles:nil, nil];
         [alerView show];

@@ -40,10 +40,10 @@ static NHShareCallTool *_instance;
 - (instancetype)registerAppSetAppConsts:(NSArray *)appConstStrs {
     
     NSAssert(appConstStrs != nil, @"需要注册的app类型不能为空");
-
     for (NSString *appStr in appConstStrs) {
         @autoreleasepool {
             Class cla = NSClassFromString([_callHelpers objectForKey:appStr]);
+            
             id obj = objc_msgSend(objc_msgSend([cla class], @selector(alloc)), @selector(init));
             if (obj != nil) {
                 [self.instanceObject setObject:obj forKey:appStr];

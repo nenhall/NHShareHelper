@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "NHCall.h"
-#import "WeiboSDK.h"
-
 
 @interface NHWeiBoCall : NHCall
 @property (nonatomic, assign) id<NHCallProtocol> callDelegate;
