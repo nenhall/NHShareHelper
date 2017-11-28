@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/neghao/NHShareHelper.git", :tag => "#{s.version}" }
   s.requires_arc = true
   s.default_subspec = 'WeiBo', 'QQ', 'Wechat', 'AliOpen', 'AliPay', 'Facebook'
-  s.pod_target_xcconfig = {'Enable Strict Checking of objc_msgSend Calls' => 'NO'}
+  # s.pod_target_xcconfig = {'Enable Strict Checking of objc_msgSend Calls' => 'NO'}
   #EOS
   #s.prefix_header_contents = pch_AF
 
