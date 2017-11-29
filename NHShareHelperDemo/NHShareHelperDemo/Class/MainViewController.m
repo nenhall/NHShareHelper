@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "NHShareCallTool.h"
+#import "NHShareModel.h"
 
 
 #define loadImage(name)   [NSString stringWithFormat:@"NHShareResources.bundle/PlatformTheme/%@",(name)]
@@ -16,6 +17,8 @@
 @interface MainViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *shareListView;
 @property (nonatomic, strong) NSMutableString *logs;
+@property (nonatomic, copy  ) NSArray *sectionList;
+@property (nonatomic, strong) NSMutableArray *itemDataSource;
 
 @end
 
@@ -23,7 +26,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    self.navigationItem.title = @"分享demo";
+    [self loadCellInfo];
+    self.shareListView.tableFooterView = [UIView new];
     [NHWeiBoCall sendTitle:@"" thumbnailData:nil webpageUrl:@""];
 
 
@@ -68,20 +73,53 @@
     NHNSLog(@"logs:%@",_logs);
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NHItemModel *model = [_itemDataSource objectAtIndex:indexPath.row];
+    if ([model.shareAction isEqualToString:NHWeiBo]) {
+        [NHShareCallTool loginSetAppConst:NHWeiBo viewController:nil];
+    }
+    
+}
+
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    UITableViewCell *callCell;
+    
+    UITableViewCell *callCell = [tableView dequeueReusableCellWithIdentifier:@"cellid"];
+    
+    if (!callCell) {
+        callCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cellid"];
+    }
+    
+    NHItemModel *model = [_itemDataSource objectAtIndex:indexPath.row];
+    callCell.textLabel.text = model.shareTitle;
+    callCell.imageView.image = [UIImage imageNamed:loadImage(model.shareImage)];
     
     return callCell;
 }
 
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return _itemDataSource.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 44;
 }
 
+
+- (void)loadCellInfo {
+    _itemDataSource = [[NSMutableArray alloc] init];
+    
+    [_itemDataSource addCellInfo:^(NHShareModel *cellinfo) {
+        cellinfo.shareTitle(@"微博登录");
+        cellinfo.shareImage(@"nh_sina.png");
+        cellinfo.shareAction(NHWeiBo);
+    }];
+    
+    [_itemDataSource addCellInfo:^(NHShareModel *cellinfo) {
+        cellinfo.shareTitle(@"微博分享");
+        cellinfo.shareImage(@"nh_sina.png");
+        cellinfo.shareAction(NHWeiBo);
+    }];
+}
 
 
 /*
@@ -93,9 +131,6 @@
  // Pass the selected object to the new view controller.
  }
  */
-
-
-
 
 
 

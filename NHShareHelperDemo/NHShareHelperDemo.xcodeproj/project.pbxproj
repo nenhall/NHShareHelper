@@ -19,7 +19,6 @@
 		0A26E7751F9E36CE00C520E5 /* NHShareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A26E7691F9E36CE00C520E5 /* NHShareCell.m */; };
 		0A26E7761F9E36CE00C520E5 /* NHShareCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A26E76A1F9E36CE00C520E5 /* NHShareCell.xib */; };
 		0A26E7771F9E36CE00C520E5 /* NHShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A26E76C1F9E36CE00C520E5 /* NHShareModel.m */; };
-		0A26E7781F9E36CE00C520E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A26E76E1F9E36CE00C520E5 /* ViewController.m */; };
 		0A26E7791F9E36CE00C520E5 /* NHShareResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A26E7701F9E36CE00C520E5 /* NHShareResources.bundle */; };
 		0A26E77A1F9E36CE00C520E5 /* shareList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A26E7711F9E36CE00C520E5 /* shareList.plist */; };
 		0A26E77B1F9E36CE00C520E5 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A26E7721F9E36CE00C520E5 /* test.png */; };
@@ -67,8 +66,6 @@
 		0A26E76A1F9E36CE00C520E5 /* NHShareCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NHShareCell.xib; sourceTree = "<group>"; };
 		0A26E76B1F9E36CE00C520E5 /* NHShareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHShareModel.h; sourceTree = "<group>"; };
 		0A26E76C1F9E36CE00C520E5 /* NHShareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHShareModel.m; sourceTree = "<group>"; };
-		0A26E76D1F9E36CE00C520E5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0A26E76E1F9E36CE00C520E5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0A26E7701F9E36CE00C520E5 /* NHShareResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NHShareResources.bundle; sourceTree = "<group>"; };
 		0A26E7711F9E36CE00C520E5 /* shareList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = shareList.plist; sourceTree = "<group>"; };
 		0A26E7721F9E36CE00C520E5 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
@@ -181,8 +178,6 @@
 				0A26E76A1F9E36CE00C520E5 /* NHShareCell.xib */,
 				0A26E76B1F9E36CE00C520E5 /* NHShareModel.h */,
 				0A26E76C1F9E36CE00C520E5 /* NHShareModel.m */,
-				0A26E76D1F9E36CE00C520E5 /* ViewController.h */,
-				0A26E76E1F9E36CE00C520E5 /* ViewController.m */,
 				0AA241FE1FCD968C0087445D /* MainViewController.h */,
 				0AA241FF1FCD968C0087445D /* MainViewController.m */,
 			);
@@ -402,7 +397,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A26E7781F9E36CE00C520E5 /* ViewController.m in Sources */,
 				0A26E7771F9E36CE00C520E5 /* NHShareModel.m in Sources */,
 				0A26E7731F9E36CE00C520E5 /* NHReusableView.m in Sources */,
 				0A26E7751F9E36CE00C520E5 /* NHShareCell.m in Sources */,
@@ -577,7 +571,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = NHShareHelperDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = neghao.studio.NHShareHelperDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.facebac.BaiKeTwinkleStar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -593,7 +587,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = NHShareHelperDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = neghao.studio.NHShareHelperDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.facebac.BaiKeTwinkleStar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

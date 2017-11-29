@@ -31,11 +31,11 @@
 
 
 //微博参数
-#define WBAppID        @"34799478"
-#define WBAppSecret    @"a99e53a9518d5218c9b2710c072b625e"
-#define WBRedirectURL  @"http://sns.whalecloud.com"
-#define WBGetTokeninfo @"https://api.weibo.com/oauth2/get_token_info"
-#define WBGetUserinfo  @"https://api.weibo.com/2/users/show.json"
+#define WBAppID         @"174688126"
+#define WBAppSecret     @"b0e9f17d472303811b347636fdaa3100"
+#define WBRedirectURL   @"www.facebac.com"
+#define WBGetTokeninfo  @"https://api.weibo.com/oauth2/get_token_info"
+#define WBGetUserinfo   @"https://api.weibo.com/2/users/show.json"
 
 
 #define NHWindow           [UIApplication sharedApplication].delegate.window

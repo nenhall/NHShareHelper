@@ -21,7 +21,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     //注册app
-    [NHShareCallTool registerAppSetAppConsts:@[NHQQ,NHWeiBo,NHWechat,NHFacebook,NHAlibaba]];
+    [NHShareCallTool registerAppSetAppConsts:@[ NHWeiBo ]];
     
     
     //需要使用到facebook才需要调用
