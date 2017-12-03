@@ -14,7 +14,7 @@
 #define loadImage(name)   [NSString stringWithFormat:@"NHShareResources.bundle/PlatformTheme/%@",(name)]
 
 
-@interface MainViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface MainViewController ()<UITableViewDelegate, UITableViewDataSource,NHShareCallToolDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *shareListView;
 @property (nonatomic, strong) NSMutableString *logs;
 @property (nonatomic, copy  ) NSArray *sectionList;
@@ -29,25 +29,25 @@
     self.navigationItem.title = @"分享demo";
     [self loadCellInfo];
     self.shareListView.tableFooterView = [UIView new];
-    [NHWeiBoCall sendTitle:@"" thumbnailData:nil webpageUrl:@""];
 
+    [[NHShareCallTool sharedCallTool] addDelegate:self];
 
 }
 
 #pragma mark - NHShareCallToolDelegate
 //请求用户信息结果
-- (void)nh_wechatRequestUserinfo:(NHWechatUserinfo *)userinfo error:(NSError *)error {
-    [self updateLog:[NSString stringWithFormat:@"微信用户信息:%@\n错误:%@",userinfo.nickname,error.localizedDescription]];
+- (void)nh_wechatRequestUserinfo:(NHWechatUserinfo *)userinfo errorMsg:(NSString *)error {
+    [self updateLog:[NSString stringWithFormat:@"微信用户信息:%@\n错误:%@",userinfo.nickname,error]];
     //    NHTipWithMessage([NSString stringWithFormat:@"用户信息：%@\n错误：%@",userinfo.nickname,error.localizedDescription]);
 }
 
--(void)nh_QQRequestUserinfo:(NHQQUserinfo *)userinfo error:(NSError *)error {
-    [self updateLog:[NSString stringWithFormat:@"QQ用户信息:%@\n错误:%@",userinfo.nickname,error.localizedDescription]];
+-(void)nh_QQRequestUserinfo:(NHQQUserinfo *)userinfo errorMsg:(NSString *)error {
+    [self updateLog:[NSString stringWithFormat:@"QQ用户信息:%@\n错误:%@",userinfo.nickname,error]];
     //    NHTipWithMessage([NSString stringWithFormat:@"用户信息：%@--错误：%@",userinfo.nickname,error.localizedDescription]);
 }
 
-- (void)nh_weiBoRequestUserinfo:(NHWeiBoUserinfo *)userinfo error:(NSError *)error {
-    [self updateLog:[NSString stringWithFormat:@"微博用户信息:%@\n错误:%@",userinfo.name,error.localizedDescription]];
+- (void)nh_weiBoRequestUserinfo:(NHWeiBoUserinfo *)userinfo errorMsg:(NSString *)error {
+    [self updateLog:[NSString stringWithFormat:@"微博用户信息:%@\n错误:%@",userinfo.name,error]];
     //    NHTipWithMessage([NSString stringWithFormat:@"用户信息：%@--错误：%@",userinfo.name,error.localizedDescription]);
 }
 
@@ -71,14 +71,27 @@
 - (void)updateLog:(NSString *)log{
     [self.logs appendString:[NSString stringWithFormat:@"%@\n\n",log]];
     NHNSLog(@"logs:%@",_logs);
+    [UIImage imageNamed:@"test"];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NHItemModel *model = [_itemDataSource objectAtIndex:indexPath.row];
+    
     if ([model.shareAction isEqualToString:NHWeiBo]) {
-        [NHShareCallTool loginSetAppConst:NHWeiBo viewController:nil];
+        if (model.shareType == 1) {
+            [NHShareCallTool loginSetAppConst:NHWeiBo viewController:nil];
+        } else {
+            [NHWeiBoCall sendTitle:@"分享测试" thumbnailData:UIImagePNGRepresentation([UIImage imageNamed:@"test"]) webpageUrl:nil];
+        }
     }
     
+    if ([model.shareAction isEqualToString:NHQQ]) {
+        if (model.shareType == 1) {
+            [NHShareCallTool loginSetAppConst:NHQQ viewController:nil];
+        } else {
+            [NHQQCall sendTitle:@"" urlStr:@"http://www.baidu.com" description:@"share test" previewImgURL:@"http://upload-images.jianshu.io/upload_images/435323-c3f8f31d6b109449.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" shareType:NHQQShare_Session];
+        }
+    }
 }
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
@@ -112,25 +125,31 @@
         cellinfo.shareTitle(@"微博登录");
         cellinfo.shareImage(@"nh_sina.png");
         cellinfo.shareAction(NHWeiBo);
+        cellinfo.shareType(1);
     }];
     
     [_itemDataSource addCellInfo:^(NHShareModel *cellinfo) {
         cellinfo.shareTitle(@"微博分享");
         cellinfo.shareImage(@"nh_sina.png");
         cellinfo.shareAction(NHWeiBo);
+        cellinfo.shareType(0);
     }];
+    
+    [_itemDataSource addCellInfo:^(NHShareModel *cellinfo) {
+        cellinfo.shareTitle(@"QQ分享");
+        cellinfo.shareImage(@"nh_qzone.png");
+        cellinfo.shareAction(NHQQ);
+        cellinfo.shareType(0);
+    }];
+    
+    [_itemDataSource addCellInfo:^(NHShareModel *cellinfo) {
+        cellinfo.shareTitle(@"QQ登录");
+        cellinfo.shareImage(@"nh_qq.png");
+        cellinfo.shareAction(NHQQ);
+        cellinfo.shareType(1);
+    }];
+    
 }
-
-
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
 
 
 

@@ -23,9 +23,6 @@
     "AliPay",
     "Facebook"
   ],
-  "pod_target_xcconfig": {
-    "Enable Strict Checking of objc_msgSend Calls": "NO"
-  },
   "subspecs": [
     {
       "name": "Gener",
@@ -71,6 +68,7 @@
 
         ]
       },
+      "requires_arc": false,
       "ios": {
         "source_files": "NHShareHelper/QQ/*.{h,m,md}",
         "frameworks": [

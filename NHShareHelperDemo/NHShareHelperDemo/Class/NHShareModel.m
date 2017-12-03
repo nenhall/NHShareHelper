@@ -10,6 +10,13 @@
 
 @implementation NHShareModel
 
+- (NHShareModel *(^)(NSInteger))shareType {
+    return ^(NSInteger shareType){
+        _model.shareType = shareType;
+        return self;
+    };
+}
+
 - (NHShareModel *(^)(NSString *))shareImage {
     return ^(NSString *shareImage){
         _model.shareImage = shareImage;

@@ -16,8 +16,8 @@
 #import "NHWeiBoCall.h"
 #endif
 
-#if __has_include("NHWeiBoCall.h")
-//#import "NHQQCall.h"
+#if __has_include("NHQQCall.h")
+#import "NHQQCall.h"
 #endif
 
 #if __has_include("NHWeiBoCall.h")

@@ -308,8 +308,14 @@ info.plist文件右键 > open AS > source code，添加如下配置，注意：�
 因sdk包比较大，所以请自动去官网下载相应的sdk包，也更好保证是官网最新版sdk，本来想用cocoapod管理的，但有些公司的pod库更新得很慢，无法保证sdk的版本，所以还是手动下载吧！下载完成后拖入到`shareSDKS`文件夹下相应的文件夹内：
 <br/>
 qq: http://wiki.open.qq.com/wiki/mobile/SDK下载<br/>
+配置：
+添加SDK依赖的系统库文件。分别是”Security.framework”, “libiconv.dylib”，“SystemConfiguration.framework”，“CoreGraphics.Framework”、“libsqlite3.dylib”、“CoreTelephony.framework”、“libstdc++.dylib”、“libz.dylib”。
+在工程配置中的“Build Settings”一栏中找到“Linking”配置区，给“Other Linker Flags”配置项添加属性值“-fobjc-arc”。
+
 wechat: https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=open1419319164&token=&lang=zh_CN<br/>
 weiBo: http://open.weibo.com/wiki/SDK<br/>
+文档：https://github.com/sinaweibosdk/weibo_ios_sdk/blob/master/微博iOS平台SDK文档V3.2.2.pdf
+
 Alibaba：https://doc.open.alipay.com/docs/doc.htm?spm=a219a.7629140.0.0.a6mex3&treeId=218&articleId=105326&docType=1<br/>
 facebook: https://developers.facebook.com/docs/ios<br/>
 

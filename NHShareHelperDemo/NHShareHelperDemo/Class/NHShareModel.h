@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface NHItemModel : NSObject
+@property (nonatomic, assign) NSInteger shareType;
 @property (nonatomic, copy) NSString * shareAction;
 @property (nonatomic, copy) NSString * shareImage;
 @property (nonatomic, copy) NSString * shareTitle;
@@ -19,6 +20,7 @@
 
 @interface NHShareModel : NSObject
 @property (nonatomic, strong) NHItemModel *model;
+- (NHShareModel *(^)(NSInteger shareType))shareType;
 - (NHShareModel *(^)(NSString *shareTitle))shareTitle;
 - (NHShareModel *(^)(NSString *shareImage))shareImage;
 - (NHShareModel *(^)(NSString *shareAction))shareAction;

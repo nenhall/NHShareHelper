@@ -7,39 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0ECF85F07BD01983D4E97B358B1ACBB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8BAE0B3C4142DD137D1F9D2A9FC7468 /* Foundation.framework */; };
-		24CFDB9D7BE783AA4A677F60EF1A033A /* WeiboSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = FEB68158888AC742F4F8B93C4B96154C /* WeiboSDK.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		38BF8F1C51385B3A365300EAD6B4BD17 /* NHWeiBoCall.h in Headers */ = {isa = PBXBuildFile; fileRef = A87E5C371AA9A0BE6868913DF43DBEEE /* NHWeiBoCall.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		092DB1936860D5CD20A6C5F8BCFFDE4B /* NHCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 0634BEAB67BAEC7FA7F8EBB4DBB7C3D9 /* NHCall.m */; };
+		1FF47D0F3340E620ED648870459B6C11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8BAE0B3C4142DD137D1F9D2A9FC7468 /* Foundation.framework */; };
+		2DDDC7970310594C2B4966E7EB0A3937 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA44C88D9921525C10E33921C496EA94 /* CoreTelephony.framework */; };
 		3AC4835BF918F12F09246C86C8898E83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8BAE0B3C4142DD137D1F9D2A9FC7468 /* Foundation.framework */; };
-		3CD8ED65F0183F4B090A4EDB8D645914 /* NHCall.h in Headers */ = {isa = PBXBuildFile; fileRef = ADABAFFA9CE052CA919FF158E5174C2D /* NHCall.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3E958CB7ADF61FAB96640A5DE634D00B /* NHUserinfo.h in Headers */ = {isa = PBXBuildFile; fileRef = C3B0080EE2BBB28B423AC0B6D3C59698 /* NHUserinfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		41BC164956ED15564A43DD3D52B3AC52 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D45A02716E87408098DFE930C95EDF /* Photos.framework */; };
+		3BC1DF463139858E2AE774389A7BD9CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDAD44F8F07A3837D12D0FF1EE56D1E1 /* UIKit.framework */; };
+		3C35F3164D53F881AAAAA12E0499902F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 782B2F48148479B5BA2CA77EF9BB3212 /* Security.framework */; };
+		3E2E0BEF3BCDB7734292E9ECB0D72691 /* NHSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D7344C9A02D695C63845596C4C38B6B /* NHSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FC168A88AC997592D0E1C9D38573573 /* NHShareCallTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C71314B31E50B57A4B45A4093D031F /* NHShareCallTool.m */; };
+		41D0FE7893B43053EFF82E357589781C /* NHCall.h in Headers */ = {isa = PBXBuildFile; fileRef = DBF52B6CB26F5795B2CC4C4DD31F66C8 /* NHCall.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		435C849B0108051E037302C84B49CBAF /* FTPopOverMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F6CFDE4EC309971075F190B57547BB /* FTPopOverMenu-dummy.m */; };
-		455A95C366F4E60B76446A64FB7AE36A /* NHApiRequestHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 50F50C0AA639149108DA1065C8AF6B76 /* NHApiRequestHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		521FFC4CE3568AB7D7352F57F2CC39C3 /* NHUserinfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E28D805100D78990B22711E26F10E8A7 /* NHUserinfo.m */; };
-		58F47EB05A67C6831C7C79E2DF9542A8 /* WBHttpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = D877C5091D4F4ED78147B8F1FA8E56C6 /* WBHttpRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5D5FA95EED4BCF41324933D5701C393D /* NHShareConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F49B9F746352F75EF36F91466B1E52 /* NHShareConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6031978267E3CD51A24C66D8CD198629 /* NHApiRequestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C97A7EB3767CAA1A03310050278A996 /* NHApiRequestHelper.m */; };
-		60F0D52EA671F410AC57E5EBBD3DF0A6 /* NHSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = EFBDA8528C02F69DF0653699445905BF /* NHSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6ED077AF3123D678A83DF54DFC43700E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A66D0D3FCB31044853AB94199B24644 /* CoreGraphics.framework */; };
-		7DBC8F9A4AFD887DFFDDE5E0DEB4A912 /* README-3.2.3.md in Sources */ = {isa = PBXBuildFile; fileRef = 0F2FA46F0B61BDE7A4CC2B29E27FE759 /* README-3.2.3.md */; };
+		4A4A4A74F203252E29ACA00A2BD14791 /* NHShareCallTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 4667C5BFF7BEB4282D9FCA0289A987C7 /* NHShareCallTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C61E89D614748CCC8CBDDCCF7279BCE /* NHQQCall.h in Headers */ = {isa = PBXBuildFile; fileRef = B087E380C6985D9176891A0E6D4BCCF2 /* NHQQCall.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E416635F86C84B0AB103956B46F1C9C /* NHUserinfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 79460262A0B3CEF1DDBF8AA1B4793A85 /* NHUserinfo.m */; };
+		600B5B161C637B2C7623ECCCA3FEA5E1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A66D0D3FCB31044853AB94199B24644 /* CoreGraphics.framework */; };
+		6678081FE146BA81C74E72122F4F9AFA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6E4EEEAF78BB09D89FA15B20286364 /* QuartzCore.framework */; };
+		70CF30CF2916E5F4B72C7678CF345161 /* NHShareConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = BD041F345A2C04C8EFEA05236A36F4F6 /* NHShareConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7555E8B42DA1A24BCB2F9BEE0D14C01A /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D45A02716E87408098DFE930C95EDF /* Photos.framework */; };
+		77A32F93923E21A8A7DC48250C72C845 /* WBHttpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A1BD9C1E6A1B872B0C14BF3484C79EE /* WBHttpRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7CF1E00DE39D948F5E9BE3DBB9CBC36E /* NHCallProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B74EBB363871E4FB526A06EA2E779FC /* NHCallProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87AE5B1901122ABEBE89E27E0C2C2075 /* FTPopOverMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = A011BCEB40F441ED348528298FB96241 /* FTPopOverMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		928A24D87ABF809DEB544650E3BDA353 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD2650FFFED9725DFE7DC2D5FD81555 /* ImageIO.framework */; };
-		AA39F67CAB5AF93CB478D66B1A384015 /* NHCallProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DCF292CF5734929F8A0308250FE0517 /* NHCallProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC9D8506BF148956ED0104C835DB431A /* NHShareCallTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9981CB56BE2F3A913EC4FB7F01083D /* NHShareCallTool.m */; };
+		88F4F84BED02262C3240CEC2C634FABB /* README-3.3.0.md in Sources */ = {isa = PBXBuildFile; fileRef = 8C27381AA8920282571EB27CD6186FAF /* README-3.3.0.md */; };
+		8AC682637DFD261093088E68C8C571BB /* NHQQCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B653961005D3099B80023AA5AB2247 /* NHQQCall.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8D63CD63F9674EEF281C246A3D34FE90 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD2650FFFED9725DFE7DC2D5FD81555 /* ImageIO.framework */; };
+		8FE7F5C692F18337605EDE16B7229163 /* NHWeiBoCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5914A425B9314EDA8C302E0DFCB07C /* NHWeiBoCall.m */; };
 		ACA7CE3F46FFEAEA86E7EF008321F5FD /* Pods-NHShareHelperDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C38E5807101B0040E4133D228CFA15 /* Pods-NHShareHelperDemo-dummy.m */; };
-		B6C10F74F6F2F97A05D13B892C086DD4 /* NHCall.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4DE0126625D96B7DDA6FFEE35E6189 /* NHCall.m */; };
-		BB80D0171B9AF2A76B26204DCD126EA4 /* NHWeiBoCall.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9BE13B6A893DF8F3634D41A6BB7BE1 /* NHWeiBoCall.m */; };
-		C26606B78C37A71E21565FFABAF05E68 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A06E7C54BAAF2E9E712451CD2BE478 /* CoreText.framework */; };
-		C29116A739CFC6C7BBEC44996C8BE804 /* NHShareCallTool.h in Headers */ = {isa = PBXBuildFile; fileRef = D214B2D33DF4BAF78EF4BD7A6A5380FA /* NHShareCallTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C45A5EBDEF113FD9588AA8D6BEB96AAC /* NHShareHelper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9AC910E0A72ECA4CCF16D4B4D4B28F /* NHShareHelper-dummy.m */; };
-		CF71714AF7904E0EBACE67B50A9A4071 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286077F7E38A23AF2460AAEBA65C0D4F /* SystemConfiguration.framework */; };
-		D3663B0BD46350754340035259988F95 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6E4EEEAF78BB09D89FA15B20286364 /* QuartzCore.framework */; };
-		DAF6D9F6B0FB526D6B71169A0B199DF3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 782B2F48148479B5BA2CA77EF9BB3212 /* Security.framework */; };
+		AFEB8AC793CD5BF1771D98D9A6779CF1 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A06E7C54BAAF2E9E712451CD2BE478 /* CoreText.framework */; };
+		BE49415139C89CDCB2E801DDD90B971B /* NHShareHelper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C7B170B24785098C2DCD24BC505C00 /* NHShareHelper-dummy.m */; };
+		C7D065A4736B855E2A4322ADA45E69F5 /* WeiboSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A1F2B681CBCB5F6EF22405B33770DAE /* WeiboSDK.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D13DA8E621412AC8560FBDA11F743DE6 /* README-3.2.3.md in Sources */ = {isa = PBXBuildFile; fileRef = EC17B3ACFD75E450B81B29BE7DBA8C4F /* README-3.2.3.md */; };
+		D3E336C3E110220AC0BE49DBEBAA2BA2 /* NHApiRequestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E049D74518EC27FC0339D59CA5568B /* NHApiRequestHelper.m */; };
+		D75DE9DF771987F8B22B73368295A637 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286077F7E38A23AF2460AAEBA65C0D4F /* SystemConfiguration.framework */; };
 		DBBD8DC5DB6E016ADD4374AD4695B930 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8BAE0B3C4142DD137D1F9D2A9FC7468 /* Foundation.framework */; };
+		E18288277169E43BFFC97A46899B7B9A /* NHUserinfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 693186CF6D81C3D1F2304C56EC403204 /* NHUserinfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E583F5134C0584EDA3AE0EB4C7C17864 /* FTPopOverMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E164F19BD5B71CBB8F96914B2BFC7EF /* FTPopOverMenu.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		E6BDD47213504105714B390D4C4D4605 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDAD44F8F07A3837D12D0FF1EE56D1E1 /* UIKit.framework */; };
-		F4A280E253E9289ECCB55AEEC2350D7B /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA44C88D9921525C10E33921C496EA94 /* CoreTelephony.framework */; };
+		EA6C4F08C127E1393208C246805ABD66 /* NHApiRequestHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC281C78CA14BDE5A00A1365AAC5672 /* NHApiRequestHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDA2ED84308FE2732403EFFCF713DB26 /* NHWeiBoCall.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DA683B037192F50C4C4CDFEFF71A924 /* NHWeiBoCall.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +50,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C2CA9258B0B942D8F5A3DC72F1037A87;
+			remoteGlobalIDString = F3670314F3EFAC995919C1A7CECD0D58;
 			remoteInfo = NHShareHelper;
 		};
 		ACD8D6429189241EC311C43D6355CB89 /* PBXContainerItemProxy */ = {
@@ -60,53 +63,58 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03F49B9F746352F75EF36F91466B1E52 /* NHShareConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHShareConfiguration.h; path = NHShareHelper/Gener/NHShareConfiguration.h; sourceTree = "<group>"; };
+		0634BEAB67BAEC7FA7F8EBB4DBB7C3D9 /* NHCall.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHCall.m; path = NHShareHelper/Gener/NHCall.m; sourceTree = "<group>"; };
 		07435D287B40EC0862064CBFC8F39B46 /* Pods-NHShareHelperDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NHShareHelperDemo-resources.sh"; sourceTree = "<group>"; };
-		0F2FA46F0B61BDE7A4CC2B29E27FE759 /* README-3.2.3.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = "README-3.2.3.md"; path = "NHShareHelper/WeiBo/README-3.2.3.md"; sourceTree = "<group>"; };
+		0D5914A425B9314EDA8C302E0DFCB07C /* NHWeiBoCall.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHWeiBoCall.m; path = NHShareHelper/WeiBo/NHWeiBoCall.m; sourceTree = "<group>"; };
+		0D7344C9A02D695C63845596C4C38B6B /* NHSingleton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHSingleton.h; path = NHShareHelper/Gener/NHSingleton.h; sourceTree = "<group>"; };
 		11DF8CD55013C69F1765E01E394F2A49 /* libNHShareHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNHShareHelper.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		12C7B170B24785098C2DCD24BC505C00 /* NHShareHelper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NHShareHelper-dummy.m"; sourceTree = "<group>"; };
+		15B653961005D3099B80023AA5AB2247 /* NHQQCall.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHQQCall.m; path = NHShareHelper/QQ/NHQQCall.m; sourceTree = "<group>"; };
 		1CD2650FFFED9725DFE7DC2D5FD81555 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
-		1DCF292CF5734929F8A0308250FE0517 /* NHCallProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHCallProtocol.h; path = NHShareHelper/Gener/NHCallProtocol.h; sourceTree = "<group>"; };
+		22C71314B31E50B57A4B45A4093D031F /* NHShareCallTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHShareCallTool.m; path = NHShareHelper/Gener/NHShareCallTool.m; sourceTree = "<group>"; };
 		286077F7E38A23AF2460AAEBA65C0D4F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		2D9981CB56BE2F3A913EC4FB7F01083D /* NHShareCallTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHShareCallTool.m; path = NHShareHelper/Gener/NHShareCallTool.m; sourceTree = "<group>"; };
+		2A1F2B681CBCB5F6EF22405B33770DAE /* WeiboSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
 		2DBF0CD4B7889C34B4F2DA345CCF811D /* Pods-NHShareHelperDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NHShareHelperDemo-frameworks.sh"; sourceTree = "<group>"; };
+		4667C5BFF7BEB4282D9FCA0289A987C7 /* NHShareCallTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHShareCallTool.h; path = NHShareHelper/Gener/NHShareCallTool.h; sourceTree = "<group>"; };
 		47D762DAEB404CC816B35F7CD4D30FFA /* libPods-NHShareHelperDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NHShareHelperDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B74EBB363871E4FB526A06EA2E779FC /* NHCallProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHCallProtocol.h; path = NHShareHelper/Gener/NHCallProtocol.h; sourceTree = "<group>"; };
 		4D57B1C9EC0E2C766ADC698F154BDAE8 /* libFTPopOverMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFTPopOverMenu.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E257C3B90D7E7B739D4CE99024E62D9 /* Pods-NHShareHelperDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NHShareHelperDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		50F50C0AA639149108DA1065C8AF6B76 /* NHApiRequestHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHApiRequestHelper.h; path = NHShareHelper/Gener/NHApiRequestHelper.h; sourceTree = "<group>"; };
 		51C38E5807101B0040E4133D228CFA15 /* Pods-NHShareHelperDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NHShareHelperDemo-dummy.m"; sourceTree = "<group>"; };
 		52C236C7DE569BC1C21285DA518C2D8C /* Pods-NHShareHelperDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NHShareHelperDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5A1BD9C1E6A1B872B0C14BF3484C79EE /* WBHttpRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WBHttpRequest.h; sourceTree = "<group>"; };
 		60E18AD39409A73FF605F5CDBCF81BA3 /* FTPopOverMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FTPopOverMenu.xcconfig; sourceTree = "<group>"; };
 		66A06E7C54BAAF2E9E712451CD2BE478 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		693186CF6D81C3D1F2304C56EC403204 /* NHUserinfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHUserinfo.h; path = NHShareHelper/Gener/NHUserinfo.h; sourceTree = "<group>"; };
 		6A66D0D3FCB31044853AB94199B24644 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		6C97A7EB3767CAA1A03310050278A996 /* NHApiRequestHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHApiRequestHelper.m; path = NHShareHelper/Gener/NHApiRequestHelper.m; sourceTree = "<group>"; };
+		6B8DE6756EC159127ABF5BC1210B4BB1 /* NHShareHelper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NHShareHelper-prefix.pch"; sourceTree = "<group>"; };
 		782B2F48148479B5BA2CA77EF9BB3212 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		79460262A0B3CEF1DDBF8AA1B4793A85 /* NHUserinfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHUserinfo.m; path = NHShareHelper/Gener/NHUserinfo.m; sourceTree = "<group>"; };
 		798BE74AD9088438750E2203A01671AD /* Pods-NHShareHelperDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NHShareHelperDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		7E164F19BD5B71CBB8F96914B2BFC7EF /* FTPopOverMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FTPopOverMenu.m; path = FTPopOverMenu/FTPopOverMenu.m; sourceTree = "<group>"; };
-		8017877D2C385F0016AC618A4973F2C1 /* NHShareHelper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NHShareHelper-prefix.pch"; sourceTree = "<group>"; };
+		8ABEB8B2A0ED9377C0BEC09BA1615C54 /* NHShareHelper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NHShareHelper.xcconfig; sourceTree = "<group>"; };
+		8B5DC0E72BBB69F6455C1AD5AF44FD06 /* libWeiboSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libWeiboSDK.a; path = NHShareHelper/WeiBo/WeiboSDK/libWeiboSDK.a; sourceTree = "<group>"; };
+		8C27381AA8920282571EB27CD6186FAF /* README-3.3.0.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = "README-3.3.0.md"; path = "NHShareHelper/QQ/README-3.3.0.md"; sourceTree = "<group>"; };
+		8DA683B037192F50C4C4CDFEFF71A924 /* NHWeiBoCall.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHWeiBoCall.h; path = NHShareHelper/WeiBo/NHWeiBoCall.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F0584BF7AE9A3ECA1118C90B7D261CD /* WeiboSDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = WeiboSDK.bundle; path = NHShareHelper/WeiBo/WeiboSDK/WeiboSDK.bundle; sourceTree = "<group>"; };
+		9AD69595EDD6C80EED25C7339BE9472E /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TencentOpenApi_IOS_Bundle.bundle; path = NHShareHelper/QQ/TencentOpenApi/TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
 		A011BCEB40F441ED348528298FB96241 /* FTPopOverMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTPopOverMenu.h; path = FTPopOverMenu/FTPopOverMenu.h; sourceTree = "<group>"; };
-		A87E5C371AA9A0BE6868913DF43DBEEE /* NHWeiBoCall.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHWeiBoCall.h; path = NHShareHelper/WeiBo/NHWeiBoCall.h; sourceTree = "<group>"; };
-		AA4DE0126625D96B7DDA6FFEE35E6189 /* NHCall.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHCall.m; path = NHShareHelper/Gener/NHCall.m; sourceTree = "<group>"; };
-		AA5B9A5781ED99861C22A6C920E295D9 /* libWeiboSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libWeiboSDK.a; path = NHShareHelper/WeiBo/WeiboSDK/libWeiboSDK.a; sourceTree = "<group>"; };
-		AC9AC910E0A72ECA4CCF16D4B4D4B28F /* NHShareHelper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NHShareHelper-dummy.m"; sourceTree = "<group>"; };
-		ADABAFFA9CE052CA919FF158E5174C2D /* NHCall.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHCall.h; path = NHShareHelper/Gener/NHCall.h; sourceTree = "<group>"; };
+		B087E380C6985D9176891A0E6D4BCCF2 /* NHQQCall.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHQQCall.h; path = NHShareHelper/QQ/NHQQCall.h; sourceTree = "<group>"; };
 		B3D45A02716E87408098DFE930C95EDF /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
+		B4C58FF5711B7DE4E3FE8388E8777737 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TencentOpenAPI.framework; path = NHShareHelper/QQ/TencentOpenApi/TencentOpenAPI.framework; sourceTree = "<group>"; };
 		B9278206B27C5EA83E624B3AD1435026 /* Pods-NHShareHelperDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NHShareHelperDemo.release.xcconfig"; sourceTree = "<group>"; };
+		BD041F345A2C04C8EFEA05236A36F4F6 /* NHShareConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHShareConfiguration.h; path = NHShareHelper/Gener/NHShareConfiguration.h; sourceTree = "<group>"; };
 		BDAD44F8F07A3837D12D0FF1EE56D1E1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		C3B0080EE2BBB28B423AC0B6D3C59698 /* NHUserinfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHUserinfo.h; path = NHShareHelper/Gener/NHUserinfo.h; sourceTree = "<group>"; };
 		C8F6CFDE4EC309971075F190B57547BB /* FTPopOverMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FTPopOverMenu-dummy.m"; sourceTree = "<group>"; };
 		CE6E4EEEAF78BB09D89FA15B20286364 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		D214B2D33DF4BAF78EF4BD7A6A5380FA /* NHShareCallTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHShareCallTool.h; path = NHShareHelper/Gener/NHShareCallTool.h; sourceTree = "<group>"; };
 		D814B6B7166A87AB5258F427244184F5 /* FTPopOverMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTPopOverMenu-prefix.pch"; sourceTree = "<group>"; };
-		D877C5091D4F4ED78147B8F1FA8E56C6 /* WBHttpRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WBHttpRequest.h; sourceTree = "<group>"; };
 		D8BAE0B3C4142DD137D1F9D2A9FC7468 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D9E049D74518EC27FC0339D59CA5568B /* NHApiRequestHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHApiRequestHelper.m; path = NHShareHelper/Gener/NHApiRequestHelper.m; sourceTree = "<group>"; };
 		DA44C88D9921525C10E33921C496EA94 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
-		E28D805100D78990B22711E26F10E8A7 /* NHUserinfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHUserinfo.m; path = NHShareHelper/Gener/NHUserinfo.m; sourceTree = "<group>"; };
-		ED9BE13B6A893DF8F3634D41A6BB7BE1 /* NHWeiBoCall.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NHWeiBoCall.m; path = NHShareHelper/WeiBo/NHWeiBoCall.m; sourceTree = "<group>"; };
-		EFBDA8528C02F69DF0653699445905BF /* NHSingleton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHSingleton.h; path = NHShareHelper/Gener/NHSingleton.h; sourceTree = "<group>"; };
-		FA48220FFBD13C08E343835F24BB5AC9 /* NHShareHelper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NHShareHelper.xcconfig; sourceTree = "<group>"; };
-		FEB68158888AC742F4F8B93C4B96154C /* WeiboSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
+		DBF52B6CB26F5795B2CC4C4DD31F66C8 /* NHCall.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHCall.h; path = NHShareHelper/Gener/NHCall.h; sourceTree = "<group>"; };
+		DC7126778526E114FB683FFA6052224C /* WeiboSDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = WeiboSDK.bundle; path = NHShareHelper/WeiBo/WeiboSDK/WeiboSDK.bundle; sourceTree = "<group>"; };
+		EC17B3ACFD75E450B81B29BE7DBA8C4F /* README-3.2.3.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = "README-3.2.3.md"; path = "NHShareHelper/WeiBo/README-3.2.3.md"; sourceTree = "<group>"; };
+		EEC281C78CA14BDE5A00A1365AAC5672 /* NHApiRequestHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NHApiRequestHelper.h; path = NHShareHelper/Gener/NHApiRequestHelper.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,20 +126,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		968C2104751BAF74C54FC2007B29325A /* Frameworks */ = {
+		B1B341283A7B7BF6FF918200E920B0D4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6ED077AF3123D678A83DF54DFC43700E /* CoreGraphics.framework in Frameworks */,
-				F4A280E253E9289ECCB55AEEC2350D7B /* CoreTelephony.framework in Frameworks */,
-				C26606B78C37A71E21565FFABAF05E68 /* CoreText.framework in Frameworks */,
-				0ECF85F07BD01983D4E97B358B1ACBB2 /* Foundation.framework in Frameworks */,
-				928A24D87ABF809DEB544650E3BDA353 /* ImageIO.framework in Frameworks */,
-				41BC164956ED15564A43DD3D52B3AC52 /* Photos.framework in Frameworks */,
-				D3663B0BD46350754340035259988F95 /* QuartzCore.framework in Frameworks */,
-				DAF6D9F6B0FB526D6B71169A0B199DF3 /* Security.framework in Frameworks */,
-				CF71714AF7904E0EBACE67B50A9A4071 /* SystemConfiguration.framework in Frameworks */,
-				E6BDD47213504105714B390D4C4D4605 /* UIKit.framework in Frameworks */,
+				600B5B161C637B2C7623ECCCA3FEA5E1 /* CoreGraphics.framework in Frameworks */,
+				2DDDC7970310594C2B4966E7EB0A3937 /* CoreTelephony.framework in Frameworks */,
+				AFEB8AC793CD5BF1771D98D9A6779CF1 /* CoreText.framework in Frameworks */,
+				1FF47D0F3340E620ED648870459B6C11 /* Foundation.framework in Frameworks */,
+				8D63CD63F9674EEF281C246A3D34FE90 /* ImageIO.framework in Frameworks */,
+				7555E8B42DA1A24BCB2F9BEE0D14C01A /* Photos.framework in Frameworks */,
+				6678081FE146BA81C74E72122F4F9AFA /* QuartzCore.framework in Frameworks */,
+				3C35F3164D53F881AAAAA12E0499902F /* Security.framework in Frameworks */,
+				D75DE9DF771987F8B22B73368295A637 /* SystemConfiguration.framework in Frameworks */,
+				3BC1DF463139858E2AE774389A7BD9CC /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +154,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01D6F5CE92D1CB4E6FBEA362A88EF0EA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9AD69595EDD6C80EED25C7339BE9472E /* TencentOpenApi_IOS_Bundle.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		036F35A198AC3D3BAD1D08631925CD69 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,26 +183,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2FD47C6DF30541E374181262550B234A /* Support Files */ = {
+		550338564F29DC7E965457386D2883F7 /* NHShareHelper */ = {
 			isa = PBXGroup;
 			children = (
-				FA48220FFBD13C08E343835F24BB5AC9 /* NHShareHelper.xcconfig */,
-				AC9AC910E0A72ECA4CCF16D4B4D4B28F /* NHShareHelper-dummy.m */,
-				8017877D2C385F0016AC618A4973F2C1 /* NHShareHelper-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "NHShareHelperDemo/Pods/Target Support Files/NHShareHelper";
-			sourceTree = "<group>";
-		};
-		4BEE4F620F033CB7239245660F1ACAAA /* NHShareHelper */ = {
-			isa = PBXGroup;
-			children = (
-				9CC4962B78F22E7D042CBFF7E3C77A80 /* Gener */,
-				2FD47C6DF30541E374181262550B234A /* Support Files */,
-				EC8A64CA04A9CE3A1A9CDDF039C22A63 /* WeiBo */,
+				D02AA5E8B4E0B3C4E954DBE7249DAF18 /* Gener */,
+				6F3D4A74D7D0E2BEEDC6B89E6DF39264 /* QQ */,
+				93B31AF7F080FB9E648F351AB02B6619 /* Support Files */,
+				C1C3325FB241830D1BB96C9633347F9F /* WeiBo */,
 			);
 			name = NHShareHelper;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		5556F3F7E06901E4C060736D157DE89D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B5DC0E72BBB69F6455C1AD5AF44FD06 /* libWeiboSDK.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		5A7200ED8A6CD6A7E0C2105A01ACA625 /* iOS */ = {
@@ -204,6 +218,14 @@
 				BDAD44F8F07A3837D12D0FF1EE56D1E1 /* UIKit.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		61E838881C5881988497624D31787268 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC7126778526E114FB683FFA6052224C /* WeiboSDK.bundle */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		646BE78967EC3E5AD955F383C4BCE328 /* FTPopOverMenu */ = {
@@ -224,11 +246,23 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		6F3D4A74D7D0E2BEEDC6B89E6DF39264 /* QQ */ = {
+			isa = PBXGroup;
+			children = (
+				B087E380C6985D9176891A0E6D4BCCF2 /* NHQQCall.h */,
+				15B653961005D3099B80023AA5AB2247 /* NHQQCall.m */,
+				8C27381AA8920282571EB27CD6186FAF /* README-3.3.0.md */,
+				9EAB0B254673BCF0AC0E610B7031B3A9 /* Frameworks */,
+				01D6F5CE92D1CB4E6FBEA362A88EF0EA /* Resources */,
+			);
+			name = QQ;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BD22B967B8C53B665F275B037429E1EC /* Development Pods */,
+				907020FB33C95EA68585A6D07807446B /* Development Pods */,
 				876F80F8AFD1240ED0B7B9EA9C5BFAD8 /* Frameworks */,
 				C029675A9B7293BB5CD8BD24264DE29E /* Pods */,
 				136161F51E92622363A1D1137E28C6B0 /* Products */,
@@ -244,48 +278,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		979A066A9923CAC8F0B02879CE333813 /* Frameworks */ = {
+		907020FB33C95EA68585A6D07807446B /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AA5B9A5781ED99861C22A6C920E295D9 /* libWeiboSDK.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9CC4962B78F22E7D042CBFF7E3C77A80 /* Gener */ = {
-			isa = PBXGroup;
-			children = (
-				50F50C0AA639149108DA1065C8AF6B76 /* NHApiRequestHelper.h */,
-				6C97A7EB3767CAA1A03310050278A996 /* NHApiRequestHelper.m */,
-				ADABAFFA9CE052CA919FF158E5174C2D /* NHCall.h */,
-				AA4DE0126625D96B7DDA6FFEE35E6189 /* NHCall.m */,
-				1DCF292CF5734929F8A0308250FE0517 /* NHCallProtocol.h */,
-				D214B2D33DF4BAF78EF4BD7A6A5380FA /* NHShareCallTool.h */,
-				2D9981CB56BE2F3A913EC4FB7F01083D /* NHShareCallTool.m */,
-				03F49B9F746352F75EF36F91466B1E52 /* NHShareConfiguration.h */,
-				EFBDA8528C02F69DF0653699445905BF /* NHSingleton.h */,
-				C3B0080EE2BBB28B423AC0B6D3C59698 /* NHUserinfo.h */,
-				E28D805100D78990B22711E26F10E8A7 /* NHUserinfo.m */,
-			);
-			name = Gener;
-			sourceTree = "<group>";
-		};
-		B9F80CCE39E9BD7FA6D7181C67418779 /* WeiboSDK */ = {
-			isa = PBXGroup;
-			children = (
-				D877C5091D4F4ED78147B8F1FA8E56C6 /* WBHttpRequest.h */,
-				FEB68158888AC742F4F8B93C4B96154C /* WeiboSDK.h */,
-			);
-			name = WeiboSDK;
-			path = NHShareHelper/WeiBo/WeiboSDK;
-			sourceTree = "<group>";
-		};
-		BD22B967B8C53B665F275B037429E1EC /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4BEE4F620F033CB7239245660F1ACAAA /* NHShareHelper */,
+				550338564F29DC7E965457386D2883F7 /* NHShareHelper */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		93B31AF7F080FB9E648F351AB02B6619 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8ABEB8B2A0ED9377C0BEC09BA1615C54 /* NHShareHelper.xcconfig */,
+				12C7B170B24785098C2DCD24BC505C00 /* NHShareHelper-dummy.m */,
+				6B8DE6756EC159127ABF5BC1210B4BB1 /* NHShareHelper-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "NHShareHelperDemo/Pods/Target Support Files/NHShareHelper";
+			sourceTree = "<group>";
+		};
+		9EAB0B254673BCF0AC0E610B7031B3A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4C58FF5711B7DE4E3FE8388E8777737 /* TencentOpenAPI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C029675A9B7293BB5CD8BD24264DE29E /* Pods */ = {
@@ -294,6 +311,47 @@
 				646BE78967EC3E5AD955F383C4BCE328 /* FTPopOverMenu */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C1C3325FB241830D1BB96C9633347F9F /* WeiBo */ = {
+			isa = PBXGroup;
+			children = (
+				8DA683B037192F50C4C4CDFEFF71A924 /* NHWeiBoCall.h */,
+				0D5914A425B9314EDA8C302E0DFCB07C /* NHWeiBoCall.m */,
+				EC17B3ACFD75E450B81B29BE7DBA8C4F /* README-3.2.3.md */,
+				5556F3F7E06901E4C060736D157DE89D /* Frameworks */,
+				61E838881C5881988497624D31787268 /* Resources */,
+				CF01934D7377D637CDF3FFBAAF7A0CBE /* WeiboSDK */,
+			);
+			name = WeiBo;
+			sourceTree = "<group>";
+		};
+		CF01934D7377D637CDF3FFBAAF7A0CBE /* WeiboSDK */ = {
+			isa = PBXGroup;
+			children = (
+				5A1BD9C1E6A1B872B0C14BF3484C79EE /* WBHttpRequest.h */,
+				2A1F2B681CBCB5F6EF22405B33770DAE /* WeiboSDK.h */,
+			);
+			name = WeiboSDK;
+			path = NHShareHelper/WeiBo/WeiboSDK;
+			sourceTree = "<group>";
+		};
+		D02AA5E8B4E0B3C4E954DBE7249DAF18 /* Gener */ = {
+			isa = PBXGroup;
+			children = (
+				EEC281C78CA14BDE5A00A1365AAC5672 /* NHApiRequestHelper.h */,
+				D9E049D74518EC27FC0339D59CA5568B /* NHApiRequestHelper.m */,
+				DBF52B6CB26F5795B2CC4C4DD31F66C8 /* NHCall.h */,
+				0634BEAB67BAEC7FA7F8EBB4DBB7C3D9 /* NHCall.m */,
+				4B74EBB363871E4FB526A06EA2E779FC /* NHCallProtocol.h */,
+				4667C5BFF7BEB4282D9FCA0289A987C7 /* NHShareCallTool.h */,
+				22C71314B31E50B57A4B45A4093D031F /* NHShareCallTool.m */,
+				BD041F345A2C04C8EFEA05236A36F4F6 /* NHShareConfiguration.h */,
+				0D7344C9A02D695C63845596C4C38B6B /* NHSingleton.h */,
+				693186CF6D81C3D1F2304C56EC403204 /* NHUserinfo.h */,
+				79460262A0B3CEF1DDBF8AA1B4793A85 /* NHUserinfo.m */,
+			);
+			name = Gener;
 			sourceTree = "<group>";
 		};
 		E6AEFF6FD1E6F3D8D1F3ED2792B45CDA /* Pods-NHShareHelperDemo */ = {
@@ -311,27 +369,6 @@
 			path = "Target Support Files/Pods-NHShareHelperDemo";
 			sourceTree = "<group>";
 		};
-		EC2B12B2E9F379ED0E22FADAADB713E7 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				9F0584BF7AE9A3ECA1118C90B7D261CD /* WeiboSDK.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		EC8A64CA04A9CE3A1A9CDDF039C22A63 /* WeiBo */ = {
-			isa = PBXGroup;
-			children = (
-				A87E5C371AA9A0BE6868913DF43DBEEE /* NHWeiBoCall.h */,
-				ED9BE13B6A893DF8F3634D41A6BB7BE1 /* NHWeiBoCall.m */,
-				0F2FA46F0B61BDE7A4CC2B29E27FE759 /* README-3.2.3.md */,
-				979A066A9923CAC8F0B02879CE333813 /* Frameworks */,
-				EC2B12B2E9F379ED0E22FADAADB713E7 /* Resources */,
-				B9F80CCE39E9BD7FA6D7181C67418779 /* WeiboSDK */,
-			);
-			name = WeiBo;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -343,20 +380,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		468AE8AF3A2AC2DF06D64B48CBB9CA0C /* Headers */ = {
+		F7598C55602FBEA09959769291B1AEDF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				455A95C366F4E60B76446A64FB7AE36A /* NHApiRequestHelper.h in Headers */,
-				3CD8ED65F0183F4B090A4EDB8D645914 /* NHCall.h in Headers */,
-				AA39F67CAB5AF93CB478D66B1A384015 /* NHCallProtocol.h in Headers */,
-				C29116A739CFC6C7BBEC44996C8BE804 /* NHShareCallTool.h in Headers */,
-				5D5FA95EED4BCF41324933D5701C393D /* NHShareConfiguration.h in Headers */,
-				60F0D52EA671F410AC57E5EBBD3DF0A6 /* NHSingleton.h in Headers */,
-				3E958CB7ADF61FAB96640A5DE634D00B /* NHUserinfo.h in Headers */,
-				38BF8F1C51385B3A365300EAD6B4BD17 /* NHWeiBoCall.h in Headers */,
-				58F47EB05A67C6831C7C79E2DF9542A8 /* WBHttpRequest.h in Headers */,
-				24CFDB9D7BE783AA4A677F60EF1A033A /* WeiboSDK.h in Headers */,
+				EA6C4F08C127E1393208C246805ABD66 /* NHApiRequestHelper.h in Headers */,
+				41D0FE7893B43053EFF82E357589781C /* NHCall.h in Headers */,
+				7CF1E00DE39D948F5E9BE3DBB9CBC36E /* NHCallProtocol.h in Headers */,
+				5C61E89D614748CCC8CBDDCCF7279BCE /* NHQQCall.h in Headers */,
+				4A4A4A74F203252E29ACA00A2BD14791 /* NHShareCallTool.h in Headers */,
+				70CF30CF2916E5F4B72C7678CF345161 /* NHShareConfiguration.h in Headers */,
+				3E2E0BEF3BCDB7734292E9ECB0D72691 /* NHSingleton.h in Headers */,
+				E18288277169E43BFFC97A46899B7B9A /* NHUserinfo.h in Headers */,
+				EDA2ED84308FE2732403EFFCF713DB26 /* NHWeiBoCall.h in Headers */,
+				77A32F93923E21A8A7DC48250C72C845 /* WBHttpRequest.h in Headers */,
+				C7D065A4736B855E2A4322ADA45E69F5 /* WeiboSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,13 +436,13 @@
 			productReference = 4D57B1C9EC0E2C766ADC698F154BDAE8 /* libFTPopOverMenu.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		C2CA9258B0B942D8F5A3DC72F1037A87 /* NHShareHelper */ = {
+		F3670314F3EFAC995919C1A7CECD0D58 /* NHShareHelper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9E0133FAC128FEAC2BCD18FC89DFB546 /* Build configuration list for PBXNativeTarget "NHShareHelper" */;
+			buildConfigurationList = 56FD5C160C44E05C8229D2002167AD74 /* Build configuration list for PBXNativeTarget "NHShareHelper" */;
 			buildPhases = (
-				3BAC11E5DF2030C930762CA16B678209 /* Sources */,
-				968C2104751BAF74C54FC2007B29325A /* Frameworks */,
-				468AE8AF3A2AC2DF06D64B48CBB9CA0C /* Headers */,
+				9F5C02AE79A8CDE864275A608F31944A /* Sources */,
+				B1B341283A7B7BF6FF918200E920B0D4 /* Frameworks */,
+				F7598C55602FBEA09959769291B1AEDF /* Headers */,
 			);
 			buildRules = (
 			);
@@ -437,7 +475,7 @@
 			projectRoot = "";
 			targets = (
 				837E3459DB75A8599F938E2815CDD109 /* FTPopOverMenu */,
-				C2CA9258B0B942D8F5A3DC72F1037A87 /* NHShareHelper */,
+				F3670314F3EFAC995919C1A7CECD0D58 /* NHShareHelper */,
 				45ED1339B01F16833DC0671985838DEA /* Pods-NHShareHelperDemo */,
 			);
 		};
@@ -452,26 +490,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3BAC11E5DF2030C930762CA16B678209 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6031978267E3CD51A24C66D8CD198629 /* NHApiRequestHelper.m in Sources */,
-				B6C10F74F6F2F97A05D13B892C086DD4 /* NHCall.m in Sources */,
-				AC9D8506BF148956ED0104C835DB431A /* NHShareCallTool.m in Sources */,
-				C45A5EBDEF113FD9588AA8D6BEB96AAC /* NHShareHelper-dummy.m in Sources */,
-				521FFC4CE3568AB7D7352F57F2CC39C3 /* NHUserinfo.m in Sources */,
-				BB80D0171B9AF2A76B26204DCD126EA4 /* NHWeiBoCall.m in Sources */,
-				7DBC8F9A4AFD887DFFDDE5E0DEB4A912 /* README-3.2.3.md in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4C1684BC8C9FEBFF20EB3B168496D60A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				435C849B0108051E037302C84B49CBAF /* FTPopOverMenu-dummy.m in Sources */,
 				E583F5134C0584EDA3AE0EB4C7C17864 /* FTPopOverMenu.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F5C02AE79A8CDE864275A608F31944A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3E336C3E110220AC0BE49DBEBAA2BA2 /* NHApiRequestHelper.m in Sources */,
+				092DB1936860D5CD20A6C5F8BCFFDE4B /* NHCall.m in Sources */,
+				8AC682637DFD261093088E68C8C571BB /* NHQQCall.m in Sources */,
+				3FC168A88AC997592D0E1C9D38573573 /* NHShareCallTool.m in Sources */,
+				BE49415139C89CDCB2E801DDD90B971B /* NHShareHelper-dummy.m in Sources */,
+				5E416635F86C84B0AB103956B46F1C9C /* NHUserinfo.m in Sources */,
+				8FE7F5C692F18337605EDE16B7229163 /* NHWeiBoCall.m in Sources */,
+				D13DA8E621412AC8560FBDA11F743DE6 /* README-3.2.3.md in Sources */,
+				88F4F84BED02262C3240CEC2C634FABB /* README-3.3.0.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,7 +527,7 @@
 		EDDEA177AB23E1687799D1A82BECEBA0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NHShareHelper;
-			target = C2CA9258B0B942D8F5A3DC72F1037A87 /* NHShareHelper */;
+			target = F3670314F3EFAC995919C1A7CECD0D58 /* NHShareHelper */;
 			targetProxy = 303EB718ECEF11A346A6ABC5C85DF0F6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -509,6 +549,28 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DA743CC8C7B4B2FF27ABFFBB199BE83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ABEB8B2A0ED9377C0BEC09BA1615C54 /* NHShareHelper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/NHShareHelper/NHShareHelper-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -616,28 +678,6 @@
 			};
 			name = Release;
 		};
-		70210C17E2C6BBFF4A0B5683A5740658 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA48220FFBD13C08E343835F24BB5AC9 /* NHShareHelper.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				ENABLE_STRICT_OBJC_MSGSEND = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/NHShareHelper/NHShareHelper-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		945C30C63E8B87BE84AF3AA6110A704A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 60E18AD39409A73FF605F5CDBCF81BA3 /* FTPopOverMenu.xcconfig */;
@@ -659,9 +699,9 @@
 			};
 			name = Debug;
 		};
-		CB4484576C2EA1229951264153313F42 /* Release */ = {
+		B83660140FF5A374CD24B1E3DA56D773 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA48220FFBD13C08E343835F24BB5AC9 /* NHShareHelper.xcconfig */;
+			baseConfigurationReference = 8ABEB8B2A0ED9377C0BEC09BA1615C54 /* NHShareHelper.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -758,11 +798,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9E0133FAC128FEAC2BCD18FC89DFB546 /* Build configuration list for PBXNativeTarget "NHShareHelper" */ = {
+		56FD5C160C44E05C8229D2002167AD74 /* Build configuration list for PBXNativeTarget "NHShareHelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				70210C17E2C6BBFF4A0B5683A5740658 /* Debug */,
-				CB4484576C2EA1229951264153313F42 /* Release */,
+				3DA743CC8C7B4B2FF27ABFFBB199BE83 /* Debug */,
+				B83660140FF5A374CD24B1E3DA56D773 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

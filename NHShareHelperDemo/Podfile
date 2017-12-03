@@ -4,6 +4,7 @@ platform :ios, "7.0"
 target 'NHShareHelperDemo' do
 
 pod 'NHShareHelper/WeiBo', :path=> '../NHShareHelper.podspec'
+pod 'NHShareHelper/QQ', :path=> '../NHShareHelper.podspec'
 pod 'FTPopOverMenu'
 
 end

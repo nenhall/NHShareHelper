@@ -21,16 +21,17 @@ end
 s.subspec 'WeiBo' do |ss|
 # ss.dependency 'Weibo_SDK'
 ss.dependency 'NHShareHelper/Gener'
-ss.ios.source_files   = 'NHShareHelper/WeiBo/*.{h,m,md}', 'NHShareHelper/WeiBo/WeiboSDK/*.{h}'
-ss.resource       = 'NHShareHelper/WeiBo/WeiboSDK/WeiboSDK.bundle'
-ss.frameworks     = 'Photos', 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
-ss.ios.libraries  = 'z', 'sqlite3'
-ss.vendored_libraries = 'NHShareHelper/WeiBo/WeiboSDK/libWeiboSDK.a'
+ss.ios.source_files    = 'NHShareHelper/WeiBo/*.{h,m,md}', 'NHShareHelper/WeiBo/WeiboSDK/*.{h}'
+ss.resource            = 'NHShareHelper/WeiBo/WeiboSDK/WeiboSDK.bundle'
+ss.frameworks          = 'Photos', 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
+ss.ios.libraries       = 'z', 'sqlite3'
+ss.vendored_libraries  = 'NHShareHelper/WeiBo/WeiboSDK/libWeiboSDK.a'
 ss.public_header_files = 'NHShareHelper/WeiBo/*.{h}'
 end
 
 s.subspec 'QQ' do |ss|
 	ss.dependency 'NHShareHelper/Gener'
+	ss.requires_arc = false
 	ss.ios.source_files   = 'NHShareHelper/QQ/*.{h,m,md}'
 	ss.resource       = 'NHShareHelper/QQ/TencentOpenApi/TencentOpenApi_IOS_Bundle.bundle'
 	ss.ios.frameworks = 'Security', 'SystemConfiguration','CoreGraphics','CoreTelephony'

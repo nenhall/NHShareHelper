@@ -8,21 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import "NHCall.h"
-#import <TencentOpenAPI/TencentOAuth.h>
-#import <TencentOpenApi/QQApiInterface.h>
-#import <TencentOpenApi/QQApiInterfaceObject.h>
+//#import <TencentOpenAPI/TencentOAuth.h>
+//#import <TencentOpenApi/QQApiInterface.h>
+//#import <TencentOpenApi/QQApiInterfaceObject.h>
 
 
 
-@interface NHQQCall : NHCall<TencentSessionDelegate,QQApiInterfaceDelegate>
+@interface NHQQCall : NHCall
+//<TencentSessionDelegate,QQApiInterfaceDelegate,TencentApiInterfaceDelegate>
 @property (nonatomic, strong) NHQQUserinfo *QQUserinfo;
 @property (nonatomic, assign) id<NHCallProtocol> callDelegate;
 
-
-- (BOOL)qqApplication:(UIApplication *)application
-              openURL:(NSURL *)url
-    sourceApplication:(NSString *)sourceApplication
-           annotation:(id)annotation;
 
 /**
  *  QQ分享、空间分享
