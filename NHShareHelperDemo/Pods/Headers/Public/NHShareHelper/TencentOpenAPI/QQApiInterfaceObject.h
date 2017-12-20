@@ -1,0 +1,1 @@
+../../../../../../NHShareHelper/QQ/TencentOpenApi/TencentOpenAPI.framework/Headers/QQApiInterfaceObject.h

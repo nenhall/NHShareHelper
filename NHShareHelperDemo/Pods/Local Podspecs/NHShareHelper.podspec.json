@@ -68,7 +68,6 @@
 
         ]
       },
-      "requires_arc": false,
       "ios": {
         "source_files": "NHShareHelper/QQ/*.{h,m,md}",
         "frameworks": [

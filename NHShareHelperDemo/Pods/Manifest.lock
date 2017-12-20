@@ -1,5 +1,4 @@
 PODS:
-  - FTPopOverMenu (1.3.3)
   - NHShareHelper/Gener (1.0.0)
   - NHShareHelper/QQ (1.0.0):
     - NHShareHelper/Gener
@@ -7,7 +6,6 @@ PODS:
     - NHShareHelper/Gener
 
 DEPENDENCIES:
-  - FTPopOverMenu
   - NHShareHelper/QQ (from `../NHShareHelper.podspec`)
   - NHShareHelper/WeiBo (from `../NHShareHelper.podspec`)
 
@@ -16,9 +14,8 @@ EXTERNAL SOURCES:
     :path: ../NHShareHelper.podspec
 
 SPEC CHECKSUMS:
-  FTPopOverMenu: a12bb907b8402acc4566ce3ac85f706e09af19e8
-  NHShareHelper: 65eb706f4f31b71d14a24b2fb6c2ba6153eaf9da
+  NHShareHelper: 942b561f19919fc0913ac383a1b047fad9dd412c
 
-PODFILE CHECKSUM: 52b155e2f55f56ad2a2f514c5ad5e9cff216c20d
+PODFILE CHECKSUM: 96210ae00b4d138db409f9c55f11ac769709fb7f
 
 COCOAPODS: 1.3.1

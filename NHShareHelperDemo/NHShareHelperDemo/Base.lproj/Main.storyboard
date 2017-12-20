@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5iT-BB-1B0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5iT-BB-1B0">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -67,7 +68,6 @@
                             <constraint firstItem="IdJ-4b-1Gh" firstAttribute="top" secondItem="hlx-J6-xif" secondAttribute="bottom" id="udA-I6-iZC"/>
                             <constraint firstAttribute="bottom" secondItem="3wd-tx-VRV" secondAttribute="bottom" id="xsG-84-XVj"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="uCH-Fw-HIg"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
@@ -84,6 +84,10 @@
         <scene sceneID="50a-uE-7wk">
             <objects>
                 <viewController id="VcZ-6x-LSl" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fqs-9i-pP4"/>
+                        <viewControllerLayoutGuide type="bottom" id="yXF-y7-azS"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="AgG-tc-hGQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,12 +103,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Glj-7m-wH1" firstAttribute="trailing" secondItem="btA-oK-cSs" secondAttribute="trailing" id="9dK-7h-3L2"/>
-                            <constraint firstItem="btA-oK-cSs" firstAttribute="leading" secondItem="Glj-7m-wH1" secondAttribute="leading" id="ceh-RH-uW4"/>
-                            <constraint firstItem="btA-oK-cSs" firstAttribute="top" secondItem="Glj-7m-wH1" secondAttribute="top" id="weJ-Rt-DNA"/>
-                            <constraint firstItem="Glj-7m-wH1" firstAttribute="bottom" secondItem="btA-oK-cSs" secondAttribute="bottom" id="xRQ-NV-F6l"/>
+                            <constraint firstAttribute="trailing" secondItem="btA-oK-cSs" secondAttribute="trailing" id="9dK-7h-3L2"/>
+                            <constraint firstItem="btA-oK-cSs" firstAttribute="leading" secondItem="AgG-tc-hGQ" secondAttribute="leading" id="ceh-RH-uW4"/>
+                            <constraint firstItem="btA-oK-cSs" firstAttribute="top" secondItem="fqs-9i-pP4" secondAttribute="bottom" id="weJ-Rt-DNA"/>
+                            <constraint firstItem="yXF-y7-azS" firstAttribute="top" secondItem="btA-oK-cSs" secondAttribute="bottom" id="xRQ-NV-F6l"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Glj-7m-wH1"/>
                     </view>
                     <navigationItem key="navigationItem" id="dul-kh-Bq1"/>
                     <connections>

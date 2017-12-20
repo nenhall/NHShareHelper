@@ -7,8 +7,10 @@
 //
 
 #import "MainViewController.h"
-#import "NHShareCallTool.h"
 #import "NHShareModel.h"
+#import "NHShareCallTool.h"
+#import "NHQQCall.h"
+
 
 
 #define loadImage(name)   [NSString stringWithFormat:@"NHShareResources.bundle/PlatformTheme/%@",(name)]

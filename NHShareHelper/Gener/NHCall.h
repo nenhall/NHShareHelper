@@ -14,14 +14,6 @@
 #import "NHCallProtocol.h"
 
 
-typedef NS_ENUM(NSInteger, NHQQShareType) {
-    NHQQShare_Zone = 0x01,//空间
-    NHQQShare_Forbid = 0x02,
-    NHQQShare_Session = 0x04,//QQ好友
-    NHQQShare_Favorites = 0x08,//收藏
-    NHQQShare_Dataline = 0x10,//数据线
-};
-
 
 @interface NHCall : NSObject
 {

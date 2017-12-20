@@ -22,6 +22,18 @@
 		0A26E7791F9E36CE00C520E5 /* NHShareResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A26E7701F9E36CE00C520E5 /* NHShareResources.bundle */; };
 		0A26E77A1F9E36CE00C520E5 /* shareList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A26E7711F9E36CE00C520E5 /* shareList.plist */; };
 		0A26E77B1F9E36CE00C520E5 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A26E7721F9E36CE00C520E5 /* test.png */; };
+		0A59A79A1FEAA69700BF10F9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A59A7991FEAA69700BF10F9 /* libz.tbd */; };
+		0A59A79C1FEAA6A400BF10F9 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A59A79B1FEAA6A400BF10F9 /* libsqlite3.tbd */; };
+		0A59A79E1FEAA6AE00BF10F9 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A59A79D1FEAA6AE00BF10F9 /* libiconv.tbd */; };
+		0A59A7A01FEAA6B700BF10F9 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A59A79F1FEAA6B700BF10F9 /* libstdc++.tbd */; };
+		0A59A7A61FEAA94600BF10F9 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A59A7A51FEAA94600BF10F9 /* Photos.framework */; };
+		0A59A7A81FEAA94C00BF10F9 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A59A7A71FEAA94C00BF10F9 /* ImageIO.framework */; };
+		0A59A7AA1FEAA95100BF10F9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A59A7A91FEAA95100BF10F9 /* SystemConfiguration.framework */; };
+		0A59A7AC1FEAA95700BF10F9 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A59A7AB1FEAA95700BF10F9 /* CoreText.framework */; };
+		0A59A7AE1FEAA95F00BF10F9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A59A7AD1FEAA95F00BF10F9 /* QuartzCore.framework */; };
+		0A59A7B01FEAA96900BF10F9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A59A7AF1FEAA96900BF10F9 /* Security.framework */; };
+		0A59A7B21FEAA97500BF10F9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A59A7B11FEAA97500BF10F9 /* CoreGraphics.framework */; };
+		0A59A7B41FEAA97D00BF10F9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A59A7B31FEAA97D00BF10F9 /* CoreTelephony.framework */; };
 		0AA242011FCD968C0087445D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA241FF1FCD968C0087445D /* MainViewController.m */; };
 		CB926E1024AD517679C5820C /* libPods-NHShareHelperDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3518379D02213C540B3451D3 /* libPods-NHShareHelperDemo.a */; };
 /* End PBXBuildFile section */
@@ -42,6 +54,18 @@
 			remoteInfo = NHShareHelperDemo;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A59A7A31FEAA85900BF10F9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0A26E72F1F9E369300C520E5 /* NHShareHelperDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NHShareHelperDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +93,18 @@
 		0A26E7701F9E36CE00C520E5 /* NHShareResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NHShareResources.bundle; sourceTree = "<group>"; };
 		0A26E7711F9E36CE00C520E5 /* shareList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = shareList.plist; sourceTree = "<group>"; };
 		0A26E7721F9E36CE00C520E5 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		0A59A7991FEAA69700BF10F9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		0A59A79B1FEAA6A400BF10F9 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		0A59A79D1FEAA6AE00BF10F9 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		0A59A79F1FEAA6B700BF10F9 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		0A59A7A51FEAA94600BF10F9 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		0A59A7A71FEAA94C00BF10F9 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		0A59A7A91FEAA95100BF10F9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0A59A7AB1FEAA95700BF10F9 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		0A59A7AD1FEAA95F00BF10F9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0A59A7AF1FEAA96900BF10F9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0A59A7B11FEAA97500BF10F9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0A59A7B31FEAA97D00BF10F9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		0AA241FE1FCD968C0087445D /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		0AA241FF1FCD968C0087445D /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		3518379D02213C540B3451D3 /* libPods-NHShareHelperDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NHShareHelperDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +117,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A59A7B01FEAA96900BF10F9 /* Security.framework in Frameworks */,
+				0A59A7B41FEAA97D00BF10F9 /* CoreTelephony.framework in Frameworks */,
+				0A59A7B21FEAA97500BF10F9 /* CoreGraphics.framework in Frameworks */,
+				0A59A7AE1FEAA95F00BF10F9 /* QuartzCore.framework in Frameworks */,
+				0A59A7AC1FEAA95700BF10F9 /* CoreText.framework in Frameworks */,
+				0A59A7AA1FEAA95100BF10F9 /* SystemConfiguration.framework in Frameworks */,
+				0A59A7A81FEAA94C00BF10F9 /* ImageIO.framework in Frameworks */,
+				0A59A7A61FEAA94600BF10F9 /* Photos.framework in Frameworks */,
+				0A59A7A01FEAA6B700BF10F9 /* libstdc++.tbd in Frameworks */,
+				0A59A79E1FEAA6AE00BF10F9 /* libiconv.tbd in Frameworks */,
+				0A59A79C1FEAA6A400BF10F9 /* libsqlite3.tbd in Frameworks */,
+				0A59A79A1FEAA69700BF10F9 /* libz.tbd in Frameworks */,
 				CB926E1024AD517679C5820C /* libPods-NHShareHelperDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +245,18 @@
 		578FE56CE72495F611807612 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A59A7B31FEAA97D00BF10F9 /* CoreTelephony.framework */,
+				0A59A7B11FEAA97500BF10F9 /* CoreGraphics.framework */,
+				0A59A7AF1FEAA96900BF10F9 /* Security.framework */,
+				0A59A7AD1FEAA95F00BF10F9 /* QuartzCore.framework */,
+				0A59A7AB1FEAA95700BF10F9 /* CoreText.framework */,
+				0A59A7A91FEAA95100BF10F9 /* SystemConfiguration.framework */,
+				0A59A7A71FEAA94C00BF10F9 /* ImageIO.framework */,
+				0A59A7A51FEAA94600BF10F9 /* Photos.framework */,
+				0A59A79F1FEAA6B700BF10F9 /* libstdc++.tbd */,
+				0A59A79D1FEAA6AE00BF10F9 /* libiconv.tbd */,
+				0A59A79B1FEAA6A400BF10F9 /* libsqlite3.tbd */,
+				0A59A7991FEAA69700BF10F9 /* libz.tbd */,
 				3518379D02213C540B3451D3 /* libPods-NHShareHelperDemo.a */,
 			);
 			name = Frameworks;
@@ -215,6 +275,7 @@
 				0A26E72D1F9E369300C520E5 /* Resources */,
 				8EA9026529EAEEB723BC2E8F /* [CP] Embed Pods Frameworks */,
 				9614E4DD6BA3133D2693C4A6 /* [CP] Copy Pods Resources */,
+				0A59A7A31FEAA85900BF10F9 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -567,11 +628,15 @@
 			baseConfigurationReference = D037FB58CFCE7F474B9EA888 /* Pods-NHShareHelperDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69U78V53ZN;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../NHShareHelper/QQ/TencentOpenApi\"";
 				INFOPLIST_FILE = NHShareHelperDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../NHShareHelper/WeiBo/WeiboSDK\"";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-all_load",
@@ -587,11 +652,15 @@
 			baseConfigurationReference = 47C14826F6B1535895F9BF8C /* Pods-NHShareHelperDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69U78V53ZN;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../NHShareHelper/QQ/TencentOpenApi\"";
 				INFOPLIST_FILE = NHShareHelperDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../NHShareHelper/WeiBo/WeiboSDK\"";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-all_load",

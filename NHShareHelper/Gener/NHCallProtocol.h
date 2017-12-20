@@ -19,6 +19,7 @@ typedef NS_ENUM (NSInteger, NHAppType) {
 };
 
 @class NHUserinfo;
+
 @protocol NHCallProtocol <NSObject>
 - (void)callType:(NHAppType)appType userinfo:(__kindof NHUserinfo *)userinfo errorMsg:(NSString *)errorMsg;
 - (void)callType:(NHAppType)appType loginSuccess:(BOOL)success errorMsg:(NSString *)errorMsg;

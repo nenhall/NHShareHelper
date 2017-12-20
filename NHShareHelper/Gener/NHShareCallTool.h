@@ -20,8 +20,8 @@
 #import "NHQQCall.h"
 #endif
 
-#if __has_include("NHWeiBoCall.h")
-//#import "NHWechatCall.h"
+#if __has_include("NHWechatCall.h")
+#import "NHWechatCall.h"
 #endif
 
 
@@ -72,7 +72,7 @@ UIKIT_EXTERN NSString * const NHTwitter;
 @end
 
 @interface NHShareCallTool : NSObject
-@property (nonatomic, assign) id<NHShareCallToolDelegate> delegate;
+@property (nonatomic, weak) id<NHShareCallToolDelegate> delegate;
 NSSingletonH(CallTool);
 
 /**
